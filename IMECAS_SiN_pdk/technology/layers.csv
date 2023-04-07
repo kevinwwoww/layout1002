@@ -1,0 +1,9 @@
+LAYER,DATATYPE,NAME,DESCRIPTION,PROCESS,PROCESS_DESCRIPTION,PURPOSE,PURPOSE_DESCRIPTION,FILL_COLOR,FILL_PATTERN,STROKE_COLOR
+50,2,SINCOR,200nm Full Etch SiN waveguide core,SIN,Full etch,COR,Waveguide core,BLUE,DIAGONAL,BLUE
+50,3,SINCLD,200nm Full Etch SiN waveguide cladding,SIN,Full etch,CLD,Waveguide cladding,BLUE,BACK_DIAGONAL,BLUE
+50,4,SINTCH,200nm Full Etch SiN waveguide trench,SIN,Full etch,TRE,Waveguide trench,BLUE,DIAGONAL,BLUE
+120,0,BB,Define design boundary,BB,Define design boundary,DRW,Drawing,LINEN,GRID,LINEN
+1000,0,DOC,"Only for layout recognization, will not appear on mask",DOC,"Only for layout recognization, will not appear on mask",DRW,Drawing,LIGHTSEAGREEN,DIAGONAL,LIGHTSEAGREEN
+1002,0,PINREC,Port recognization,PINREC,Port recognization,DRW,Drawing,GRAY28,BACK_DIAGONAL,GRAY28
+91,35,FLYLINE_MARK,Flyline for insufficient space in AutoLink(from LDA),FLYLINE,Fly line,MARK,Mark,RED,GRID,RED
+92,35,ERROR_MARK,Error mark(from LDA),ERROR,Error,MARK,Mark,YELLOW,BACK_DIAGONAL,YELLOW

@@ -1,0 +1,5 @@
+NAME,CONFIGURATION
+CHANNEL.C.WIRE,"wg_layout_width=0.5, wg_design_width=0.5, port_names=('op_0', 'op_1')"
+CHANNEL.C.WIRE.BEND_CIRCULAR,radius_eff=5
+RIB.C.WIRE,"wg_rib_layout_width=0.5, wg_slab_layout_width=2.0, wg_rib_design_width=0.5, wg_slab_design_width=2.0, port_names=('op_0', 'op_1')"
+RIB.C.WIRE.BEND_CIRCULAR,radius_eff=20

@@ -1,0 +1,78 @@
+{
+    "cell_name": "dc_sin_o_10",
+    "layers": {
+      "263/0": "TECH.LAYER.SiN_WG",
+      "283/0": "TECH.LAYER.BEOL_Nlt0_removal",
+      "289/0": "TECH.LAYER.BEOL_Nlt1_removal",
+      "290/0": "TECH.LAYER.BEOL_Nlt2_removal",
+      "291/0": "TECH.LAYER.BEOL_Nlt3_removal",
+      "483/0": "TECH.LAYER.Passivation_SiN_removal"
+
+    },
+    "ports": [
+      {
+          "name": "op_0",
+          "position": [
+            0.79,
+           8.309
+          ],
+          "orientation": {
+            "degrees": 180
+          },
+          "waveguide_type": {
+            "override": "TECH.WG.SiN_WG.C.WIRE",
+            "values": {
+              "wg_layout_width": 1
+            }
+          }
+      },
+      {
+          "name": "op_1",
+          "position": [
+            0.79,
+            0.812
+          ],
+          "orientation": {
+            "degrees": 180
+          },
+          "waveguide_type": {
+            "override": "TECH.WG.SiN_WG.C.WIRE",
+            "values": {
+              "wg_layout_width": 1
+            }
+          }
+      },
+      {
+          "name": "op_2",
+          "position": [
+            94.249,
+            0.812
+          ],
+          "orientation": {
+            "degrees": 0
+          },
+          "waveguide_type": {
+            "override": "TECH.WG.SiN_WG.C.WIRE",
+            "values": {
+              "wg_layout_width": 1
+            }
+          }
+      },
+      {
+          "name": "op_3",
+          "position": [
+            94.249,
+            8.309
+          ],
+          "orientation": {
+            "degrees": 0
+          },
+          "waveguide_type": {
+            "override": "TECH.WG.SiN_WG.C.WIRE",
+            "values": {
+              "wg_layout_width": 1
+            }
+          }
+      }
+    ]
+}

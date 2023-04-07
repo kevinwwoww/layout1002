@@ -1,0 +1,45 @@
+{
+    "cell_name": "RIB_C_TE_SEFE_450_1000",
+    "layers": {
+      "11/2": "TECH.LAYER.SECOR",
+      "11/3": "TECH.LAYER.SECLD",
+      "10/2": "TECH.LAYER.FECOR",
+      "10/3": "TECH.LAYER.FECLD",
+      "120/0": "TECH.LAYER.BB",
+      "1002/0": "TECH.LAYER.PINREC"
+    },
+    "ports": [
+      {
+          "name": "op_0",
+          "position": [
+            -0.2,
+            0
+          ],
+          "orientation": {
+            "degrees": 180
+          },
+          "waveguide_type": {
+            "override": "TECH.WG.Rib.C_SEFE.WIRE",
+            "values": {
+              "core2_layout_width": 1
+            }
+          }
+      },
+      {
+          "name": "op_1",
+          "position": [
+            10.2,
+            0
+          ],
+          "orientation": {
+            "degrees": 0
+          },
+          "waveguide_type": {
+            "override": "TECH.WG.Rib.C_SEFE.WIRE",
+            "values": {
+              "core2_layout_width": 1
+            }
+          }
+      }
+    ]
+}

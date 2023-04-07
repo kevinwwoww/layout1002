@@ -1,0 +1,136 @@
+{
+    "cell_name": "Ring$modulator",
+    "layers": {
+      "275/0": "TECH.LAYER.Hard_Mask_WG",
+      "406/0": "TECH.LAYER.Rib_WG",
+      "407/0": "TECH.LAYER.Strip_WG",
+      "256/0": "TECH.LAYER.P",
+      "257/0": "TECH.LAYER.N",
+      "258/0": "TECH.LAYER.Pp",
+      "259/0": "TECH.LAYER.Np",
+      "260/0": "TECH.LAYER.Npp",
+      "261/0": "TECH.LAYER.Ppp",
+      "268/0": "TECH.LAYER.Contact_Si",
+      "6/0": "TECH.LAYER.M1",
+      "85/0": "TECH.LAYER.Via1",
+      "86/0": "TECH.LAYER.M2",
+      "419/0": "TECH.LAYER.Via2",
+      "398/0": "TECH.LAYER.TaN_heater",
+      "7/0": "TECH.LAYER.Pad",
+      "145/0": "TECH.LAYER.PadAl"
+    },
+    "ports": [
+      {
+          "name": "op_0",
+          "position": [
+            65,
+            41.525
+          ],
+          "orientation": {
+            "degrees": 180
+          },
+          "waveguide_type": {
+            "override": "TECH.WG.Strip_WG.C.WIRE",
+            "values": {
+              "wg_layout_width": 0.45
+            }
+          }
+      },
+      {
+          "name": "op_1",
+          "position": [
+            65,
+            20.225
+          ],
+          "orientation": {
+            "degrees": 180
+          },
+          "waveguide_type": {
+            "override": "TECH.WG.Strip_WG.C.WIRE",
+            "values": {
+              "wg_layout_width": 0.45
+            }
+          }
+      },
+      {
+          "name": "op_2",
+          "position": [
+            195,
+            20.225
+          ],
+          "orientation": {
+            "degrees": 0
+          },
+          "waveguide_type": {
+            "override": "TECH.WG.Strip_WG.C.WIRE",
+            "values": {
+              "wg_layout_width": 0.45
+            }
+          }
+      },
+      {
+          "name": "op_3",
+          "position": [
+            195,
+            41.525
+          ],
+          "orientation": {
+            "degrees": 0
+          },
+          "waveguide_type": {
+            "override": "TECH.WG.Strip_WG.C.WIRE",
+            "values": {
+              "wg_layout_width": 0.45
+            }
+          }
+      },
+      {
+          "name": "ep_0",
+          "position": [
+            30.15,
+            163.975
+          ],
+          "orientation": {
+            "degrees": 0
+          },
+          "metal_line_type": {
+            "override": "TECH.METAL.PadAl.W40",
+            "values": {
+              "line_width": 0.5
+            }
+          }
+      },
+      {
+          "name": "ep_1",
+          "position": [
+            130.15,
+            163.975
+          ],
+          "orientation": {
+            "degrees": 0
+          },
+          "metal_line_type": {
+            "override": "TECH.METAL.PadAl.W40",
+            "values": {
+              "line_width": 0.5
+            }
+          }
+      },
+      {
+          "name": "ep_2",
+          "position": [
+            230.15,
+            163.975
+          ],
+          "orientation": {
+            "degrees": 0
+          },
+          "metal_line_type": {
+            "override": "TECH.METAL.PadAl.W40",
+            "values": {
+              "line_width": 0.5
+            }
+          }
+      }
+    ]
+}

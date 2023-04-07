@@ -1,0 +1,10 @@
+PROCESS,BAND,WIDTH,FACTORY,DEFINITION
+GRAT,C,WIRE,,"WG.GRAT.C._T_WIRE(wg_layout_width=1.1, wg_design_width=1.0, port_names=('op_0', 'op_1'))"
+GRAT,C,WIRE,BEND_CIRCULAR,CircularBendFactory(radius_eff=1.1)
+GRAT,C,WIRE,BEND_EULER,"EulerBendFactory(radius_min=1.1, l_max=5)"
+RIB,C,WIRE,,"WG.RIB.C._T_WIRE(wg_layout_width=0.6, wg_design_width=0.5, port_names=('op_0', 'op_1'))"
+RIB,C,WIRE,BEND_CIRCULAR,CircularBendFactory(radius_eff=0.6)
+RIB,C,WIRE,BEND_EULER,"EulerBendFactory(radius_min=0.6, l_max=5)"
+SLAB,C,WIRE,,"WG.SLAB.C._T_WIRE(wg_layout_width=10.1, wg_design_width=10.0, port_names=('op_0', 'op_1'))"
+SLAB,C,WIRE,BEND_CIRCULAR,CircularBendFactory(radius_eff=10.1)
+SLAB,C,WIRE,BEND_EULER,"EulerBendFactory(radius_min=10.1, l_max=5)"

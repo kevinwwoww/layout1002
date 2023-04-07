@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Generated from C:\photoCAD\layout1002\IMECAS_SiN_pdk\technology\layers.csv
+-->
+<layer-properties>
+	<properties>
+		<name>SINCOR 50.2</name>
+		<source>50/2@1</source>
+		<frame-brightness>0</frame-brightness>
+		<width>1</width>
+		<line-style>I0</line-style>
+		<frame-color>#0000FF</frame-color>
+		<fill-brightness>0</fill-brightness>
+		<fill-color>#0000FF</fill-color>
+		<dither-pattern>I8</dither-pattern>
+		<valid>true</valid>
+		<visible>true</visible>
+		<transparent>false</transparent>
+		<marked>false</marked>
+		<xfill>false</xfill>
+		<animation>0</animation>
+	</properties>
+	<properties>
+		<name>SINCLD 50.3</name>
+		<source>50/3@1</source>
+		<frame-brightness>0</frame-brightness>
+		<width>1</width>
+		<line-style>I0</line-style>
+		<frame-color>#0000FF</frame-color>
+		<fill-brightness>0</fill-brightness>
+		<fill-color>#0000FF</fill-color>
+		<dither-pattern>I4</dither-pattern>
+		<valid>true</valid>
+		<visible>true</visible>
+		<transparent>false</transparent>
+		<marked>false</marked>
+		<xfill>false</xfill>
+		<animation>0</animation>
+	</properties>
+	<properties>
+		<name>SINTCH 50.4</name>
+		<source>50/4@1</source>
+		<frame-brightness>0</frame-brightness>
+		<width>1</width>
+		<line-style>I0</line-style>
+		<frame-color>#0000FF</frame-color>
+		<fill-brightness>0</fill-brightness>
+		<fill-color>#0000FF</fill-color>
+		<dither-pattern>I8</dither-pattern>
+		<valid>true</valid>
+		<visible>true</visible>
+		<transparent>false</transparent>
+		<marked>false</marked>
+		<xfill>false</xfill>
+		<animation>0</animation>
+	</properties>
+	<properties>
+		<name>BB 120.0</name>
+		<source>120/0@1</source>
+		<frame-brightness>0</frame-brightness>
+		<width>1</width>
+		<line-style>I0</line-style>
+		<frame-color>#FAF0E6</frame-color>
+		<fill-brightness>0</fill-brightness>
+		<fill-color>#FAF0E6</fill-color>
+		<dither-pattern>I45</dither-pattern>
+		<valid>true</valid>
+		<visible>true</visible>
+		<transparent>false</transparent>
+		<marked>false</marked>
+		<xfill>false</xfill>
+		<animation>0</animation>
+	</properties>
+	<properties>
+		<name>DOC 1000.0</name>
+		<source>1000/0@1</source>
+		<frame-brightness>0</frame-brightness>
+		<width>1</width>
+		<line-style>I0</line-style>
+		<frame-color>#20B2AA</frame-color>
+		<fill-brightness>0</fill-brightness>
+		<fill-color>#20B2AA</fill-color>
+		<dither-pattern>I8</dither-pattern>
+		<valid>true</valid>
+		<visible>true</visible>
+		<transparent>false</transparent>
+		<marked>false</marked>
+		<xfill>false</xfill>
+		<animation>0</animation>
+	</properties>
+	<properties>
+		<name>PINREC 1002.0</name>
+		<source>1002/0@1</source>
+		<frame-brightness>0</frame-brightness>
+		<width>1</width>
+		<line-style>I0</line-style>
+		<frame-color>#474747</frame-color>
+		<fill-brightness>0</fill-brightness>
+		<fill-color>#474747</fill-color>
+		<dither-pattern>I4</dither-pattern>
+		<valid>true</valid>
+		<visible>true</visible>
+		<transparent>false</transparent>
+		<marked>false</marked>
+		<xfill>false</xfill>
+		<animation>0</animation>
+	</properties>
+	<properties>
+		<name>FLYLINE_MARK 91.35</name>
+		<source>91/35@1</source>
+		<frame-brightness>0</frame-brightness>
+		<width>1</width>
+		<line-style>I0</line-style>
+		<frame-color>#FF0000</frame-color>
+		<fill-brightness>0</fill-brightness>
+		<fill-color>#FF0000</fill-color>
+		<dither-pattern>I45</dither-pattern>
+		<valid>true</valid>
+		<visible>true</visible>
+		<transparent>false</transparent>
+		<marked>false</marked>
+		<xfill>false</xfill>
+		<animation>0</animation>
+	</properties>
+	<properties>
+		<name>ERROR_MARK 92.35</name>
+		<source>92/35@1</source>
+		<frame-brightness>0</frame-brightness>
+		<width>1</width>
+		<line-style>I0</line-style>
+		<frame-color>#FFFF00</frame-color>
+		<fill-brightness>0</fill-brightness>
+		<fill-color>#FFFF00</fill-color>
+		<dither-pattern>I4</dither-pattern>
+		<valid>true</valid>
+		<visible>true</visible>
+		<transparent>false</transparent>
+		<marked>false</marked>
+		<xfill>false</xfill>
+		<animation>0</animation>
+	</properties>
+</layer-properties>

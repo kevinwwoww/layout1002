@@ -1,0 +1,35 @@
+{
+    "cell_name": "ec_si_o",
+    "layers": {
+      "275/0": "TECH.LAYER.Hard_Mask_WG",
+      "283/0": "TECH.LAYER.BEOL_Nlt0_removal",
+      "289/0": "TECH.LAYER.BEOL_Nlt1_removal",
+      "290/0": "TECH.LAYER.BEOL_Nlt2_removal",
+      "291/0": "TECH.LAYER.BEOL_Nlt3_removal",
+      "483/0": "TECH.LAYER.Passivation_SiN_removal",
+      "404/0": "TECH.LAYER.Deep_Trench"
+    },
+    "ports": [
+      {
+          "name": "op_0",
+          "position": [
+            410,
+            75.40497
+          ],
+          "orientation": {
+            "degrees": 0
+          },
+          "waveguide_type": {
+            "override": "TECH.WG.Hard_Mask_WG.C.WIRE",
+            "values": {
+              "wg_layout_width": 0.41
+            }
+          }
+      }
+
+
+
+
+
+    ]
+}

@@ -1,0 +1,12 @@
+[tool.pyright]
+exclude = [
+    "**/__pycache__",
+    "**/node_modules",
+    ".scripts",
+    ".venv",
+    ".venv_*",
+    "venv",
+    "venv_*",
+    ".vscode",
+    "docs",
+]

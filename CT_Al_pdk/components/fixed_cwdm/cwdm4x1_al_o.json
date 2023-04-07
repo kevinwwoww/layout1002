@@ -1,0 +1,112 @@
+{
+    "cell_name": "cwdm4x1_o",
+    "layers": {
+      "263/0": "TECH.LAYER.SiN_WG",
+      "483/0": "_IGNORE_"
+
+    },
+    "ports": [
+      {
+          "name": "op_0",
+          "position": [
+            -2078.126,
+            -10.968
+
+          ],
+          "orientation": {
+            "degrees": 180
+          },
+          "waveguide_type": {
+            "override": "TECH.WG.SiN_WG.C.WIRE",
+            "values": {
+              "wg_layout_width": 1
+            }
+          }
+      },
+      {
+          "name": "op_1",
+          "position": [
+            -2078.126,
+            -180.368
+
+          ],
+          "orientation": {
+            "degrees": 180
+          },
+          "waveguide_type": {
+            "override": "TECH.WG.SiN_WG.C.WIRE",
+            "values": {
+              "wg_layout_width": 1
+            }
+          }
+      },
+      {
+          "name": "op_2",
+          "position": [
+            -2078.126,
+            -210.368
+
+          ],
+          "orientation": {
+            "degrees": 180
+          },
+          "waveguide_type": {
+            "override": "TECH.WG.SiN_WG.C.WIRE",
+            "values": {
+              "wg_layout_width": 1
+            }
+          }
+      },
+      {
+          "name": "op_3",
+          "position": [
+            -2078.126,
+            -379.768
+
+          ],
+          "orientation": {
+            "degrees": 180
+          },
+          "waveguide_type": {
+            "override": "TECH.WG.SiN_WG.C.WIRE",
+            "values": {
+              "wg_layout_width": 1
+            }
+          }
+      },
+      {
+          "name": "op_4",
+          "position": [
+            -50.326,
+            -195.368
+
+          ],
+          "orientation": {
+            "degrees": 0
+          },
+          "waveguide_type": {
+            "override": "TECH.WG.SiN_WG.C.WIRE",
+            "values": {
+              "wg_layout_width": 1
+            }
+          }
+      },
+      {
+          "name": "op_5",
+          "position": [
+            -0.326,
+            -202.768
+
+          ],
+          "orientation": {
+            "degrees": 0
+          },
+          "waveguide_type": {
+            "override": "TECH.WG.SiN_WG.C.WIRE",
+            "values": {
+              "wg_layout_width": 1
+            }
+          }
+      }
+    ]
+}

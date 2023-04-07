@@ -1,0 +1,28 @@
+{
+    "cell_name": "FGC_O_TE_WG380",
+    "layers": {
+      "10/4": "TECH.LAYER.FETCH",
+      "120/0": "TECH.LAYER.BB",
+      "1002/0": "TECH.LAYER.PINREC",
+      "1000/0": "TECH.LAYER.DOC",
+      "90/0": "TECH.LAYER.LP"
+    },
+    "ports": [
+      {
+          "name": "out_0",
+          "position": [
+            46,
+            15
+          ],
+          "orientation": {
+            "degrees": 0
+          },
+          "waveguide_type": {
+            "override": "TECH.WG.Channel.O.WIRE",
+            "values": {
+              "core_layout_width": 0.38
+            }
+          }
+      }
+    ]
+}

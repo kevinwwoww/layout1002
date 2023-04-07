@@ -1,0 +1,57 @@
+{
+    "cell_name": "Main",
+    "layers": {
+      "275/0": "TECH.LAYER.Hard_Mask_WG",
+      "702/0": "TECH.LAYER.DEVREC_NOTE"
+    },
+    "ports": [
+      {
+          "name": "op_0",
+          "position": [
+            0,
+            10.55
+          ],
+          "orientation": {
+            "degrees": 180
+          },
+          "waveguide_type": {
+            "override": "TECH.WG.Strip_WG.C.WIRE",
+            "values": {
+              "wg_layout_width": 0.45
+            }
+          }
+      },
+      {
+          "name": "op_1",
+          "position": [
+            33.257,
+            0.225
+          ],
+          "orientation": {
+            "degrees": 0
+          },
+          "waveguide_type": {
+            "override": "TECH.WG.Strip_WG.C.WIRE",
+            "values": {
+              "wg_layout_width": 0.45
+            }
+          }
+      },
+      {
+          "name": "op_2",
+          "position": [
+            33.257,
+            20.875
+          ],
+          "orientation": {
+            "degrees": 0
+          },
+          "waveguide_type": {
+            "override": "TECH.WG.Strip_WG.C.WIRE",
+            "values": {
+              "wg_layout_width": 0.45
+            }
+          }
+      }
+    ]
+}

@@ -1,0 +1,666 @@
+<?xml version='1.0' encoding='utf-8'?>
+<layer-properties>
+	<properties>
+		<frame-color>#0000FF</frame-color>
+		<frame-brightness>0</frame-brightness>
+		<fill-color>#0000FF</fill-color>
+		<fill-brightness>0</fill-brightness>
+		<dither-pattern>I8</dither-pattern>
+		<line-style />
+		<valid>true</valid>
+		<visible>true</visible>
+		<transparent>false</transparent>
+		<width>1</width>
+		<marked>false</marked>
+		<xfill>false</xfill>
+		<animation>0</animation>
+		<name>FWG.COR 1.1</name>
+		<source>1/1@1</source>
+	</properties>
+	<properties>
+		<frame-color>#0000FF</frame-color>
+		<frame-brightness>0</frame-brightness>
+		<fill-color>#0000FF</fill-color>
+		<fill-brightness>0</fill-brightness>
+		<dither-pattern>I4</dither-pattern>
+		<line-style />
+		<valid>true</valid>
+		<visible>true</visible>
+		<transparent>false</transparent>
+		<width>1</width>
+		<marked>false</marked>
+		<xfill>false</xfill>
+		<animation>0</animation>
+		<name>FWG.CLD 1.2</name>
+		<source>1/2@1</source>
+	</properties>
+	<properties>
+		<frame-color>#FF0000</frame-color>
+		<frame-brightness>0</frame-brightness>
+		<fill-color>#000000</fill-color>
+		<fill-brightness>0</fill-brightness>
+		<dither-pattern>I8</dither-pattern>
+		<line-style />
+		<valid>true</valid>
+		<visible>true</visible>
+		<transparent>true</transparent>
+		<width>1</width>
+		<marked>false</marked>
+		<xfill>false</xfill>
+		<animation>0</animation>
+		<name>FWG.TRE 1.4</name>
+		<source>1/4@1</source>
+	</properties>
+	<properties>
+		<frame-color>#FF0000</frame-color>
+		<frame-brightness>0</frame-brightness>
+		<fill-color>#000000</fill-color>
+		<fill-brightness>0</fill-brightness>
+		<dither-pattern>I8</dither-pattern>
+		<line-style />
+		<valid>true</valid>
+		<visible>true</visible>
+		<transparent>true</transparent>
+		<width>1</width>
+		<marked>false</marked>
+		<xfill>false</xfill>
+		<animation>0</animation>
+		<name>FWG.HOL 1.5</name>
+		<source>1/5@1</source>
+	</properties>
+	<properties>
+		<frame-color>#FF0000</frame-color>
+		<frame-brightness>0</frame-brightness>
+		<fill-color>#000000</fill-color>
+		<fill-brightness>0</fill-brightness>
+		<dither-pattern>I8</dither-pattern>
+		<line-style />
+		<valid>true</valid>
+		<visible>true</visible>
+		<transparent>true</transparent>
+		<width>1</width>
+		<marked>false</marked>
+		<xfill>false</xfill>
+		<animation>0</animation>
+		<name>SWG.COR 2.1</name>
+		<source>2/1@1</source>
+	</properties>
+	<properties>
+		<frame-color>#00FF00</frame-color>
+		<frame-brightness>0</frame-brightness>
+		<fill-color>#00FF00</fill-color>
+		<fill-brightness>0</fill-brightness>
+		<dither-pattern>I4</dither-pattern>
+		<line-style />
+		<valid>true</valid>
+		<visible>true</visible>
+		<transparent>false</transparent>
+		<width>1</width>
+		<marked>false</marked>
+		<xfill>false</xfill>
+		<animation>0</animation>
+		<name>SWG.CLD 2.2</name>
+		<source>2/2@1</source>
+	</properties>
+	<properties>
+		<frame-color>#FF0000</frame-color>
+		<frame-brightness>0</frame-brightness>
+		<fill-color>#000000</fill-color>
+		<fill-brightness>0</fill-brightness>
+		<dither-pattern>I8</dither-pattern>
+		<line-style />
+		<valid>true</valid>
+		<visible>true</visible>
+		<transparent>true</transparent>
+		<width>1</width>
+		<marked>false</marked>
+		<xfill>false</xfill>
+		<animation>0</animation>
+		<name>SWG.TRE 2.4</name>
+		<source>2/4@1</source>
+	</properties>
+	<properties>
+		<frame-color>#FF0000</frame-color>
+		<frame-brightness>0</frame-brightness>
+		<fill-color>#000000</fill-color>
+		<fill-brightness>0</fill-brightness>
+		<dither-pattern>I8</dither-pattern>
+		<line-style />
+		<valid>true</valid>
+		<visible>true</visible>
+		<transparent>true</transparent>
+		<width>1</width>
+		<marked>false</marked>
+		<xfill>false</xfill>
+		<animation>0</animation>
+		<name>SWG.HOL 2.5</name>
+		<source>2/5@1</source>
+	</properties>
+	<properties>
+		<frame-color>#FF0000</frame-color>
+		<frame-brightness>0</frame-brightness>
+		<fill-color>#000000</fill-color>
+		<fill-brightness>0</fill-brightness>
+		<dither-pattern>I8</dither-pattern>
+		<line-style />
+		<valid>true</valid>
+		<visible>true</visible>
+		<transparent>true</transparent>
+		<width>1</width>
+		<marked>false</marked>
+		<xfill>false</xfill>
+		<animation>0</animation>
+		<name>MWG.COR 3.1</name>
+		<source>3/1@1</source>
+	</properties>
+	<properties>
+		<frame-color>#FFFF00</frame-color>
+		<frame-brightness>0</frame-brightness>
+		<fill-color>#FFFF00</fill-color>
+		<fill-brightness>0</fill-brightness>
+		<dither-pattern>I4</dither-pattern>
+		<line-style />
+		<valid>true</valid>
+		<visible>true</visible>
+		<transparent>false</transparent>
+		<width>1</width>
+		<marked>false</marked>
+		<xfill>false</xfill>
+		<animation>0</animation>
+		<name>MWG.CLD 3.2</name>
+		<source>3/2@1</source>
+	</properties>
+	<properties>
+		<frame-color>#FF0000</frame-color>
+		<frame-brightness>0</frame-brightness>
+		<fill-color>#000000</fill-color>
+		<fill-brightness>0</fill-brightness>
+		<dither-pattern>I8</dither-pattern>
+		<line-style />
+		<valid>true</valid>
+		<visible>true</visible>
+		<transparent>true</transparent>
+		<width>1</width>
+		<marked>false</marked>
+		<xfill>false</xfill>
+		<animation>0</animation>
+		<name>MWG.TRE 3.4</name>
+		<source>3/4@1</source>
+	</properties>
+	<properties>
+		<frame-color>#FF0000</frame-color>
+		<frame-brightness>0</frame-brightness>
+		<fill-color>#000000</fill-color>
+		<fill-brightness>0</fill-brightness>
+		<dither-pattern>I8</dither-pattern>
+		<line-style />
+		<valid>true</valid>
+		<visible>true</visible>
+		<transparent>true</transparent>
+		<width>1</width>
+		<marked>false</marked>
+		<xfill>false</xfill>
+		<animation>0</animation>
+		<name>MWG.HOL 3.5</name>
+		<source>3/5@1</source>
+	</properties>
+	<properties>
+		<frame-color>#FF0000</frame-color>
+		<frame-brightness>0</frame-brightness>
+		<fill-color>#000000</fill-color>
+		<fill-brightness>0</fill-brightness>
+		<dither-pattern>I8</dither-pattern>
+		<line-style />
+		<valid>true</valid>
+		<visible>true</visible>
+		<transparent>true</transparent>
+		<width>1</width>
+		<marked>false</marked>
+		<xfill>false</xfill>
+		<animation>0</animation>
+		<name>NP.DRW 20.3</name>
+		<source>20/3@1</source>
+	</properties>
+	<properties>
+		<frame-color>#FF0000</frame-color>
+		<frame-brightness>0</frame-brightness>
+		<fill-color>#000000</fill-color>
+		<fill-brightness>0</fill-brightness>
+		<dither-pattern>I8</dither-pattern>
+		<line-style />
+		<valid>true</valid>
+		<visible>true</visible>
+		<transparent>true</transparent>
+		<width>1</width>
+		<marked>false</marked>
+		<xfill>false</xfill>
+		<animation>0</animation>
+		<name>PP.DRW 21.3</name>
+		<source>21/3@1</source>
+	</properties>
+	<properties>
+		<frame-color>#FF0000</frame-color>
+		<frame-brightness>0</frame-brightness>
+		<fill-color>#000000</fill-color>
+		<fill-brightness>0</fill-brightness>
+		<dither-pattern>I8</dither-pattern>
+		<line-style />
+		<valid>true</valid>
+		<visible>true</visible>
+		<transparent>true</transparent>
+		<width>1</width>
+		<marked>false</marked>
+		<xfill>false</xfill>
+		<animation>0</animation>
+		<name>N.DRW 23.3</name>
+		<source>23/3@1</source>
+	</properties>
+	<properties>
+		<frame-color>#FF0000</frame-color>
+		<frame-brightness>0</frame-brightness>
+		<fill-color>#000000</fill-color>
+		<fill-brightness>0</fill-brightness>
+		<dither-pattern>I8</dither-pattern>
+		<line-style />
+		<valid>true</valid>
+		<visible>true</visible>
+		<transparent>true</transparent>
+		<width>1</width>
+		<marked>false</marked>
+		<xfill>false</xfill>
+		<animation>0</animation>
+		<name>P.DRW 24.3</name>
+		<source>24/3@1</source>
+	</properties>
+	<properties>
+		<frame-color>#FF0000</frame-color>
+		<frame-brightness>0</frame-brightness>
+		<fill-color>#000000</fill-color>
+		<fill-brightness>0</fill-brightness>
+		<dither-pattern>I8</dither-pattern>
+		<line-style />
+		<valid>true</valid>
+		<visible>true</visible>
+		<transparent>true</transparent>
+		<width>1</width>
+		<marked>false</marked>
+		<xfill>false</xfill>
+		<animation>0</animation>
+		<name>N2.DRW 25.3</name>
+		<source>25/3@1</source>
+	</properties>
+	<properties>
+		<frame-color>#FF0000</frame-color>
+		<frame-brightness>0</frame-brightness>
+		<fill-color>#000000</fill-color>
+		<fill-brightness>0</fill-brightness>
+		<dither-pattern>I8</dither-pattern>
+		<line-style />
+		<valid>true</valid>
+		<visible>true</visible>
+		<transparent>true</transparent>
+		<width>1</width>
+		<marked>false</marked>
+		<xfill>false</xfill>
+		<animation>0</animation>
+		<name>P2.DRW 26.3</name>
+		<source>26/3@1</source>
+	</properties>
+	<properties>
+		<frame-color>#FF0000</frame-color>
+		<frame-brightness>0</frame-brightness>
+		<fill-color>#000000</fill-color>
+		<fill-brightness>0</fill-brightness>
+		<dither-pattern>I8</dither-pattern>
+		<line-style />
+		<valid>true</valid>
+		<visible>true</visible>
+		<transparent>true</transparent>
+		<width>1</width>
+		<marked>false</marked>
+		<xfill>false</xfill>
+		<animation>0</animation>
+		<name>NPP.DRW 27.3</name>
+		<source>27/3@1</source>
+	</properties>
+	<properties>
+		<frame-color>#FF0000</frame-color>
+		<frame-brightness>0</frame-brightness>
+		<fill-color>#000000</fill-color>
+		<fill-brightness>0</fill-brightness>
+		<dither-pattern>I8</dither-pattern>
+		<line-style />
+		<valid>true</valid>
+		<visible>true</visible>
+		<transparent>true</transparent>
+		<width>1</width>
+		<marked>false</marked>
+		<xfill>false</xfill>
+		<animation>0</animation>
+		<name>PPP.DRW 28.3</name>
+		<source>28/3@1</source>
+	</properties>
+	<properties>
+		<frame-color>#FF0000</frame-color>
+		<frame-brightness>0</frame-brightness>
+		<fill-color>#000000</fill-color>
+		<fill-brightness>0</fill-brightness>
+		<dither-pattern>I8</dither-pattern>
+		<line-style />
+		<valid>true</valid>
+		<visible>true</visible>
+		<transparent>true</transparent>
+		<width>1</width>
+		<marked>false</marked>
+		<xfill>false</xfill>
+		<animation>0</animation>
+		<name>GE.DRW 29.3</name>
+		<source>29/3@1</source>
+	</properties>
+	<properties>
+		<frame-color>#FF0000</frame-color>
+		<frame-brightness>0</frame-brightness>
+		<fill-color>#000000</fill-color>
+		<fill-brightness>0</fill-brightness>
+		<dither-pattern>I8</dither-pattern>
+		<line-style />
+		<valid>true</valid>
+		<visible>true</visible>
+		<transparent>true</transparent>
+		<width>1</width>
+		<marked>false</marked>
+		<xfill>false</xfill>
+		<animation>0</animation>
+		<name>SIL.DRW 30.3</name>
+		<source>30/3@1</source>
+	</properties>
+	<properties>
+		<frame-color>#FF0000</frame-color>
+		<frame-brightness>0</frame-brightness>
+		<fill-color>#000000</fill-color>
+		<fill-brightness>0</fill-brightness>
+		<dither-pattern>I8</dither-pattern>
+		<line-style />
+		<valid>true</valid>
+		<visible>true</visible>
+		<transparent>true</transparent>
+		<width>1</width>
+		<marked>false</marked>
+		<xfill>false</xfill>
+		<animation>0</animation>
+		<name>TIN.DRW 31.3</name>
+		<source>31/3@1</source>
+	</properties>
+	<properties>
+		<frame-color>#FF0000</frame-color>
+		<frame-brightness>0</frame-brightness>
+		<fill-color>#000000</fill-color>
+		<fill-brightness>0</fill-brightness>
+		<dither-pattern>I8</dither-pattern>
+		<line-style />
+		<valid>true</valid>
+		<visible>true</visible>
+		<transparent>true</transparent>
+		<width>1</width>
+		<marked>false</marked>
+		<xfill>false</xfill>
+		<animation>0</animation>
+		<name>CONT.DRW 32.3</name>
+		<source>32/3@1</source>
+	</properties>
+	<properties>
+		<frame-color>#FF0000</frame-color>
+		<frame-brightness>0</frame-brightness>
+		<fill-color>#000000</fill-color>
+		<fill-brightness>0</fill-brightness>
+		<dither-pattern>I8</dither-pattern>
+		<line-style />
+		<valid>true</valid>
+		<visible>true</visible>
+		<transparent>true</transparent>
+		<width>1</width>
+		<marked>false</marked>
+		<xfill>false</xfill>
+		<animation>0</animation>
+		<name>M1.DRW 33.3</name>
+		<source>33/3@1</source>
+	</properties>
+	<properties>
+		<frame-color>#FF0000</frame-color>
+		<frame-brightness>0</frame-brightness>
+		<fill-color>#000000</fill-color>
+		<fill-brightness>0</fill-brightness>
+		<dither-pattern>I8</dither-pattern>
+		<line-style />
+		<valid>true</valid>
+		<visible>true</visible>
+		<transparent>true</transparent>
+		<width>1</width>
+		<marked>false</marked>
+		<xfill>false</xfill>
+		<animation>0</animation>
+		<name>VIA1.DRW 42.3</name>
+		<source>42/3@1</source>
+	</properties>
+	<properties>
+		<frame-color>#FF0000</frame-color>
+		<frame-brightness>0</frame-brightness>
+		<fill-color>#000000</fill-color>
+		<fill-brightness>0</fill-brightness>
+		<dither-pattern>I8</dither-pattern>
+		<line-style />
+		<valid>true</valid>
+		<visible>true</visible>
+		<transparent>true</transparent>
+		<width>1</width>
+		<marked>false</marked>
+		<xfill>false</xfill>
+		<animation>0</animation>
+		<name>MT.DRW 43.3</name>
+		<source>43/3@1</source>
+	</properties>
+	<properties>
+		<frame-color>#FF0000</frame-color>
+		<frame-brightness>0</frame-brightness>
+		<fill-color>#000000</fill-color>
+		<fill-brightness>0</fill-brightness>
+		<dither-pattern>I8</dither-pattern>
+		<line-style />
+		<valid>true</valid>
+		<visible>true</visible>
+		<transparent>true</transparent>
+		<width>1</width>
+		<marked>false</marked>
+		<xfill>false</xfill>
+		<animation>0</animation>
+		<name>PASS.EC 50.11</name>
+		<source>50/11@1</source>
+	</properties>
+	<properties>
+		<frame-color>#FF0000</frame-color>
+		<frame-brightness>0</frame-brightness>
+		<fill-color>#000000</fill-color>
+		<fill-brightness>0</fill-brightness>
+		<dither-pattern>I8</dither-pattern>
+		<line-style />
+		<valid>true</valid>
+		<visible>true</visible>
+		<transparent>true</transparent>
+		<width>1</width>
+		<marked>false</marked>
+		<xfill>false</xfill>
+		<animation>0</animation>
+		<name>PASS.GC 50.12</name>
+		<source>50/12@1</source>
+	</properties>
+	<properties>
+		<frame-color>#FF0000</frame-color>
+		<frame-brightness>0</frame-brightness>
+		<fill-color>#000000</fill-color>
+		<fill-brightness>0</fill-brightness>
+		<dither-pattern>I8</dither-pattern>
+		<line-style />
+		<valid>true</valid>
+		<visible>true</visible>
+		<transparent>true</transparent>
+		<width>1</width>
+		<marked>false</marked>
+		<xfill>false</xfill>
+		<animation>0</animation>
+		<name>PASS.MT 50.13</name>
+		<source>50/13@1</source>
+	</properties>
+	<properties>
+		<frame-color>#FF0000</frame-color>
+		<frame-brightness>0</frame-brightness>
+		<fill-color>#000000</fill-color>
+		<fill-brightness>0</fill-brightness>
+		<dither-pattern>I8</dither-pattern>
+		<line-style />
+		<valid>true</valid>
+		<visible>true</visible>
+		<transparent>true</transparent>
+		<width>1</width>
+		<marked>false</marked>
+		<xfill>false</xfill>
+		<animation>0</animation>
+		<name>TH_ISO.DRW 51.3</name>
+		<source>51/3@1</source>
+	</properties>
+	<properties>
+		<frame-color>#FF0000</frame-color>
+		<frame-brightness>0</frame-brightness>
+		<fill-color>#000000</fill-color>
+		<fill-brightness>0</fill-brightness>
+		<dither-pattern>I8</dither-pattern>
+		<line-style />
+		<valid>true</valid>
+		<visible>true</visible>
+		<transparent>true</transparent>
+		<width>1</width>
+		<marked>false</marked>
+		<xfill>false</xfill>
+		<animation>0</animation>
+		<name>LABEL.DRW 55.3</name>
+		<source>55/3@1</source>
+	</properties>
+	<properties>
+		<frame-color>#FF0000</frame-color>
+		<frame-brightness>0</frame-brightness>
+		<fill-color>#000000</fill-color>
+		<fill-brightness>0</fill-brightness>
+		<dither-pattern>I8</dither-pattern>
+		<line-style />
+		<valid>true</valid>
+		<visible>true</visible>
+		<transparent>true</transparent>
+		<width>1</width>
+		<marked>false</marked>
+		<xfill>false</xfill>
+		<animation>0</animation>
+		<name>TEXT.NOTE 56.31</name>
+		<source>56/31@1</source>
+	</properties>
+	<properties>
+		<frame-color>#FF0000</frame-color>
+		<frame-brightness>0</frame-brightness>
+		<fill-color>#000000</fill-color>
+		<fill-brightness>0</fill-brightness>
+		<dither-pattern>I8</dither-pattern>
+		<line-style />
+		<valid>true</valid>
+		<visible>true</visible>
+		<transparent>true</transparent>
+		<width>1</width>
+		<marked>false</marked>
+		<xfill>false</xfill>
+		<animation>0</animation>
+		<name>IOPORT.O 60.21</name>
+		<source>60/21@1</source>
+	</properties>
+	<properties>
+		<frame-color>#FF0000</frame-color>
+		<frame-brightness>0</frame-brightness>
+		<fill-color>#000000</fill-color>
+		<fill-brightness>0</fill-brightness>
+		<dither-pattern>I8</dither-pattern>
+		<line-style />
+		<valid>true</valid>
+		<visible>true</visible>
+		<transparent>true</transparent>
+		<width>1</width>
+		<marked>false</marked>
+		<xfill>false</xfill>
+		<animation>0</animation>
+		<name>IOPORT.E 60.22</name>
+		<source>60/22@1</source>
+	</properties>
+	<properties>
+		<frame-color>#FF0000</frame-color>
+		<frame-brightness>0</frame-brightness>
+		<fill-color>#000000</fill-color>
+		<fill-brightness>0</fill-brightness>
+		<dither-pattern>I8</dither-pattern>
+		<line-style />
+		<valid>true</valid>
+		<visible>true</visible>
+		<transparent>true</transparent>
+		<width>1</width>
+		<marked>false</marked>
+		<xfill>false</xfill>
+		<animation>0</animation>
+		<name>PINREC.NOTE 70.31</name>
+		<source>70/31@1</source>
+	</properties>
+	<properties>
+		<frame-color>#FF0000</frame-color>
+		<frame-brightness>0</frame-brightness>
+		<fill-color>#000000</fill-color>
+		<fill-brightness>0</fill-brightness>
+		<dither-pattern>I8</dither-pattern>
+		<line-style />
+		<valid>true</valid>
+		<visible>true</visible>
+		<transparent>true</transparent>
+		<width>1</width>
+		<marked>false</marked>
+		<xfill>false</xfill>
+		<animation>0</animation>
+		<name>FIBREC.NOTE 71.31</name>
+		<source>71/31@1</source>
+	</properties>
+	<properties>
+		<frame-color>#FF0000</frame-color>
+		<frame-brightness>0</frame-brightness>
+		<fill-color>#000000</fill-color>
+		<fill-brightness>0</fill-brightness>
+		<dither-pattern>I8</dither-pattern>
+		<line-style />
+		<valid>true</valid>
+		<visible>true</visible>
+		<transparent>true</transparent>
+		<width>1</width>
+		<marked>false</marked>
+		<xfill>false</xfill>
+		<animation>0</animation>
+		<name>DEVREC.NOTE 80.31</name>
+		<source>80/31@1</source>
+	</properties>
+	<properties>
+		<frame-color>#FF0000</frame-color>
+		<frame-brightness>0</frame-brightness>
+		<fill-color>#000000</fill-color>
+		<fill-brightness>0</fill-brightness>
+		<dither-pattern>I8</dither-pattern>
+		<line-style />
+		<valid>true</valid>
+		<visible>true</visible>
+		<transparent>true</transparent>
+		<width>1</width>
+		<marked>false</marked>
+		<xfill>false</xfill>
+		<animation>0</animation>
+		<name>PAYLOAD.NOTE 90.31</name>
+		<source>90/31@1</source>
+	</properties>
+</layer-properties>

@@ -1,0 +1,75 @@
+{
+    "cell_name": "SIN_Crossing_TE_O",
+    "layers": {
+      "50/4": "TECH.LAYER.SINTCH",
+      "120/0": "TECH.LAYER.BB",
+      "1002/0": "TECH.LAYER.PINREC",
+      "1000/0": "TECH.LAYER.DOC"
+    },
+    "ports": [
+      {
+          "name": "in1",
+          "position": [
+            0,
+            16.682
+          ],
+          "orientation": {
+            "degrees": 180
+          },
+          "waveguide_type": {
+            "override": "TECH.WG.Channel.O.WIRE",
+            "values": {
+              "core_layout_width": 1.1
+            }
+          }
+      },
+            {
+          "name": "out2",
+          "position": [
+            16.682,
+            0
+          ],
+          "orientation": {
+            "degrees": 270
+          },
+          "waveguide_type": {
+            "override": "TECH.WG.Channel.O.WIRE",
+            "values": {
+              "core_layout_width": 1.1
+            }
+          }
+      },
+                  {
+          "name": "out1",
+          "position": [
+            33.364,
+            16.682
+          ],
+          "orientation": {
+            "degrees": 0
+          },
+          "waveguide_type": {
+            "override": "TECH.WG.Channel.O.WIRE",
+            "values": {
+              "core_layout_width": 1.1
+            }
+          }
+      },
+                  {
+          "name": "in2",
+          "position": [
+            16.682,
+            33.364
+          ],
+          "orientation": {
+            "degrees": 90
+          },
+          "waveguide_type": {
+            "override": "TECH.WG.Channel.O.WIRE",
+            "values": {
+              "core_layout_width": 1.1
+            }
+          }
+      }
+    ]
+}

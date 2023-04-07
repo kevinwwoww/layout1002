@@ -1,0 +1,47 @@
+{
+    "cell_name": "tran_si_sin_gap200_o",
+    "layers": {
+      "275/0": "TECH.LAYER.Hard_Mask_WG",
+      "263/0": "TECH.LAYER.SiN_WG",
+      "283/0": "TECH.LAYER.BEOL_Nlt0_removal",
+      "289/0": "TECH.LAYER.BEOL_Nlt1_removal",
+      "290/0": "TECH.LAYER.BEOL_Nlt2_removal",
+      "291/0": "TECH.LAYER.BEOL_Nlt3_removal",
+      "483/0": "TECH.LAYER.Passivation_SiN_removal"
+
+    },
+    "ports": [
+      {
+          "name": "op_0",
+          "position": [
+            -0.165,
+            0.712
+          ],
+          "orientation": {
+            "degrees": 180
+          },
+          "waveguide_type": {
+            "override": "TECH.WG.SiN_WG.C.WIRE",
+            "values": {
+              "wg_layout_width": 1
+            }
+          }
+      },
+      {
+          "name": "op_1",
+          "position": [
+            129.835,
+            0.712
+          ],
+          "orientation": {
+            "degrees": 0
+          },
+          "waveguide_type": {
+            "override": "TECH.WG.Hard_Mask_WG.C.WIRE",
+            "values": {
+              "wg_layout_width": 0.41
+            }
+          }
+      }
+    ]
+}

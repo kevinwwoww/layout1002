@@ -1,0 +1,50 @@
+{
+    "library_path": "MH_TE_1550.gds",
+    "cell_name": "Fixed_MH_TE_1550",
+    "layers": {
+        "*": "_ERROR_",
+        "31/1": "FWG_COR",
+        "31/2": "FWG_CLD",
+        "19/0": "TIN_DRW",
+        "50/0": "CONT_DRW",
+        "11/1": "M1_DRW",
+        "95/0": "_IGNORE_",
+        "1001/0": "DEVREC_NOTE"
+    },
+    "ports": [
+        {
+            "name": "op_0",
+            "position": [
+                0,
+                0
+            ],
+            "orientation": {
+                "degrees": 180
+            },
+            "waveguide_type": {
+                "override": "FWG.C.WIRE",
+                "values": {
+                    "core_layout_width": 0.45,
+                    "cladding_layout_width": 4.45
+                }
+            }
+        },
+        {
+            "name": "op_1",
+            "position": [
+                410,
+                0
+            ],
+            "orientation": {
+                "degrees": 0
+            },
+            "waveguide_type": {
+                "override": "FWG.C.WIRE",
+                "values": {
+                    "core_layout_width": 0.45,
+                    "cladding_layout_width": 4.45
+                }
+            }
+        }
+    ]
+}

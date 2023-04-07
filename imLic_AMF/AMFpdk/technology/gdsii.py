@@ -1,0 +1,2 @@
+class GDSII:
+    MAX_COORDINATES = 8191

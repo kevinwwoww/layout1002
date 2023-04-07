@@ -1,0 +1,43 @@
+{
+    "cell_name": "RIB_O_TE_SE_580",
+    "layers": {
+      "11/2": "TECH.LAYER.SECOR",
+      "11/3": "TECH.LAYER.SECLD",
+      "11/4": "TECH.LAYER.SETCH",
+      "1002/0": "TECH.LAYER.PINREC"
+    },
+    "ports": [
+      {
+          "name": "op_0",
+          "position": [
+            0,
+            0.29
+          ],
+          "orientation": {
+            "degrees": 180
+          },
+          "waveguide_type": {
+            "override": "TECH.WG.SE.O.WIRE",
+            "values": {
+              "core_layout_width": 0.58
+            }
+          }
+      },
+      {
+          "name": "op_1",
+          "position": [
+            10,
+            0.58
+          ],
+          "orientation": {
+            "degrees": 0
+          },
+          "waveguide_type": {
+            "override": "TECH.WG.SE.O.WIRE",
+            "values": {
+              "core_layout_width": 0.58
+            }
+          }
+      }
+    ]
+}

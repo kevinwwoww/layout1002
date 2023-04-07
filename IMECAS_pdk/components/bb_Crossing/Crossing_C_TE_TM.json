@@ -1,0 +1,74 @@
+{
+    "cell_name": "Crossing_C_TE_TM",
+    "layers": {
+      "10/4": "TECH.LAYER.FETCH",
+      "120/0": "TECH.LAYER.BB",
+      "1002/0": "TECH.LAYER.PINREC"
+    },
+    "ports": [
+      {
+          "name": "op_0",
+          "position": [
+            0,
+            4.823
+          ],
+          "orientation": {
+            "degrees": 180
+          },
+          "waveguide_type": {
+            "override": "TECH.WG.Channel.C.WIRE",
+            "values": {
+              "core_layout_width": 0.45
+            }
+          }
+      },
+            {
+          "name": "op_1",
+          "position": [
+            4.815,
+            0
+          ],
+          "orientation": {
+            "degrees": 270
+          },
+          "waveguide_type": {
+            "override": "TECH.WG.Channel.C.WIRE_TETM",
+            "values": {
+              "core_layout_width": 0.45
+            }
+          }
+      },
+                  {
+          "name": "op_2",
+          "position": [
+            9.629,
+            4.823
+          ],
+          "orientation": {
+            "degrees": 0
+          },
+          "waveguide_type": {
+            "override": "TECH.WG.Channel.C.WIRE",
+            "values": {
+              "core_layout_width": 0.45
+            }
+          }
+      },
+                  {
+          "name": "op_3",
+          "position": [
+            4.815,
+            9.646
+          ],
+          "orientation": {
+            "degrees": 90
+          },
+          "waveguide_type": {
+            "override": "TECH.WG.Channel.C.WIRE_TETM",
+            "values": {
+              "core_layout_width": 0.45
+            }
+          }
+      }
+    ]
+}

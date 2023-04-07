@@ -1,0 +1,59 @@
+{
+    "cell_name": "SIN_YBranch_TE_C",
+    "layers": {
+      "50/4": "TECH.LAYER.SINTCH",
+      "120/0": "TECH.LAYER.BB",
+      "1002/0": "TECH.LAYER.PINREC",
+      "1000/0": "TECH.LAYER.DOC"
+    },
+    "ports": [
+      {
+          "name": "in1",
+          "position": [
+            0,
+            18.6
+          ],
+          "orientation": {
+            "degrees": 180
+          },
+          "waveguide_type": {
+            "override": "TECH.WG.Channel.C.WIRE",
+            "values": {
+              "core_layout_width": 1.5
+            }
+          }
+      },
+      {
+          "name": "out1",
+          "position": [
+            127.119,
+            24.45
+          ],
+          "orientation": {
+            "degrees": 0
+          },
+          "waveguide_type": {
+            "override": "TECH.WG.Channel.C.WIRE",
+            "values": {
+              "core_layout_width": 1.5
+            }
+          }
+      },
+      {
+          "name": "out2",
+          "position": [
+            127.119,
+            12.75
+          ],
+          "orientation": {
+            "degrees": 0
+          },
+          "waveguide_type": {
+            "override": "TECH.WG.Channel.C.WIRE",
+            "values": {
+              "core_layout_width": 1.5
+            }
+          }
+      }
+    ]
+}
