@@ -1,4 +1,4 @@
-from AMFpdk.technology.layers import LAYER
+from AMFpdk_3_5_Cband.technology.layers import LAYER
 from fnpcell.pdk.technology.all import FillPattern, LayerFill, LayerStroke, LayerStyle, LayerStyleSet, NamedColor
 
 class DISPLAY:

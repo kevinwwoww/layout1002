@@ -1,8 +1,8 @@
 from dataclasses import dataclass
 from typing import Tuple
 from fnpcell import all as fp
-from AMFpdk.technology import WG
-from AMFpdk.technology.interfaces import CoreWaveguideType
+from AMFpdk_3_5_Cband.technology import WG
+from AMFpdk_3_5_Cband.technology.interfaces import CoreWaveguideType
 
 @dataclass(eq=False)
 class RIBtransition(fp.PCell):

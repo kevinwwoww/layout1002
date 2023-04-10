@@ -1,4 +1,4 @@
-# Generated from C:\photoCAD\layout1002\.venv_layout1002\Lib\site-packages\AMFpdk\technology\layers.csv
+# Generated from C:\photoCAD\layout1002\.venv_layout1002\Lib\site-packages\AMFpdk_3_5_Cband\technology\layers.csv
 
 from fnpcell.pdk.technology.all import Layer, LayerEnum, Process, ProcessEnum, Purpose, PurposeEnum
 

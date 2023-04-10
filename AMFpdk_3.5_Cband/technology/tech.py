@@ -1,18 +1,18 @@
-from AMFpdk.technology.wg import WG
-from AMFpdk.technology.AMF_bands import BAND
-from AMFpdk.technology.layers import LAYER, PURPOSE, PROCESS
-from AMFpdk.technology.vias import VIAS
-from AMFpdk.technology.auto_link import LINKING_POLICY
-from AMFpdk.technology.device import DEVICE
-from AMFpdk.technology.display import DISPLAY
-from AMFpdk.technology.fitting_function import FITTING_FUNCTION
-from AMFpdk.technology.gdsii import GDSII
-from AMFpdk.technology.label import LABEL
-from AMFpdk.technology.metrics import METRICS
-from AMFpdk.technology.resource import RESOURCE
-from AMFpdk.technology.terminal import PORT, PIN
-from AMFpdk.technology.metal import METAL
-from AMFpdk.technology.auto_transition import AUTO_TRANSITION
+from AMFpdk_3_5_Cband.technology.wg import WG
+from AMFpdk_3_5_Cband.technology.AMF_bands import BAND
+from AMFpdk_3_5_Cband.technology.layers import LAYER, PURPOSE, PROCESS
+from AMFpdk_3_5_Cband.technology.vias import VIAS
+from AMFpdk_3_5_Cband.technology.auto_link import LINKING_POLICY
+from AMFpdk_3_5_Cband.technology.device import DEVICE
+from AMFpdk_3_5_Cband.technology.display import DISPLAY
+from AMFpdk_3_5_Cband.technology.fitting_function import FITTING_FUNCTION
+from AMFpdk_3_5_Cband.technology.gdsii import GDSII
+from AMFpdk_3_5_Cband.technology.label import LABEL
+from AMFpdk_3_5_Cband.technology.metrics import METRICS
+from AMFpdk_3_5_Cband.technology.resource import RESOURCE
+from AMFpdk_3_5_Cband.technology.terminal import PORT, PIN
+from AMFpdk_3_5_Cband.technology.metal import METAL
+from AMFpdk_3_5_Cband.technology.auto_transition import AUTO_TRANSITION
 
 
 class TECH:

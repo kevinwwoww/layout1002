@@ -1,12 +1,12 @@
 from dataclasses import dataclass
 from fnpcell.pdk.technology import all as fpt
-from AMFpdk.technology.interfaces import CrackedMetalLineType
+from AMFpdk_3_5_Cband.technology.interfaces import CrackedMetalLineType
 
 class METAL:
     @fpt.classconst
     @classmethod
     def metal_stack(cls) -> fpt.MetalStack:
-        from AMFpdk.technology import get_technology
+        from AMFpdk_3_5_Cband.technology import get_technology
 
         TECH = get_technology()
         return fpt.MetalStack(
@@ -22,7 +22,7 @@ class METAL:
 
     @staticmethod
     def from_single_layer(layer: fpt.ILayer) -> fpt.IMetalLineType:
-        from AMFpdk.technology import get_technology
+        from AMFpdk_3_5_Cband.technology import get_technology
 
         TECH = get_technology()
         if layer == TECH.LAYER.MT1:
@@ -38,7 +38,7 @@ class METAL:
         @fpt.classconst
         @classmethod
         def metal_stack(cls) -> fpt.MetalStack:
-            from AMFpdk.technology import get_technology
+            from AMFpdk_3_5_Cband.technology import get_technology
 
             TECH = get_technology()
             return TECH.METAL.metal_stack.updated(layers=[TECH.LAYER.MT1])
@@ -69,7 +69,7 @@ class METAL:
         @fpt.classconst
         @classmethod
         def metal_stack(cls) -> fpt.MetalStack:
-            from AMFpdk.technology import get_technology
+            from AMFpdk_3_5_Cband.technology import get_technology
 
             TECH = get_technology()
             return TECH.METAL.metal_stack.updated(layers=[TECH.LAYER.MT2])
@@ -100,7 +100,7 @@ class METAL:
         @fpt.classconst
         @classmethod
         def metal_stack(cls) -> fpt.MetalStack:
-            from AMFpdk.technology import get_technology
+            from AMFpdk_3_5_Cband.technology import get_technology
 
             TECH = get_technology()
             return TECH.METAL.metal_stack.updated(layers=[TECH.LAYER.PAD])

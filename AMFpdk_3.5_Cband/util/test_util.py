@@ -6,7 +6,7 @@ from typing import Any, Callable, Iterable, List, Set, Tuple, TypeVar, Union, ca
 
 from fnpcell import all as fp
 from fnpcell.pdk.technology import all as fpt
-from AMFpdk.technology import get_technology
+from AMFpdk_3_5_Cband.technology import get_technology
 
 _T = TypeVar("_T", bound=Callable[..., Union[fp.ICell, fp.ICellRef, fp.ILibrary]])
 

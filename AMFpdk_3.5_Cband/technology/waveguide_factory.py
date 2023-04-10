@@ -8,7 +8,7 @@ from fnpcell.pdk.technology import all as fpt
 @dataclass(frozen=True)
 class StraightFactory(fpt.IStraightWaveguideFactory):
     def __call__(self, type: fpt.IWaveguideType, length: float):
-        from AMFpdk.components.straight.straight import Straight
+        from AMFpdk_3_5_Cband.components.straight.straight import Straight
 
         straight = Straight(length=length, waveguide_type=type)
         return straight, ("op_0", "op_1")
@@ -20,8 +20,8 @@ class CircularBendFactory(fpt.IBendWaveguideFactory):
     waveguide_type: fpt.IWaveguideType = field(repr=False, compare=False)
 
     def __call__(self, central_angle: float):
-        from AMFpdk.components.bend.bend_circular import BendCircular, BendCircular90
-        from AMFpdk.technology import get_technology
+        from AMFpdk_3_5_Cband.components.bend.bend_circular import BendCircular, BendCircular90
+        from AMFpdk_3_5_Cband.technology import get_technology
 
         TECH = get_technology()
 
@@ -49,9 +49,9 @@ class EulerBendFactory(fpt.IBendWaveguideFactory):
     waveguide_type: fpt.IWaveguideType = field(repr=False, compare=False)
 
     def __call__(self, central_angle: float):
-        from AMFpdk.components.bend.bend_euler import BendEuler, BendEuler90
-        from AMFpdk.technology.interfaces import CoreWaveguideType
-        from AMFpdk.technology import get_technology
+        from AMFpdk_3_5_Cband.components.bend.bend_euler import BendEuler, BendEuler90
+        from AMFpdk_3_5_Cband.technology.interfaces import CoreWaveguideType
+        from AMFpdk_3_5_Cband.technology import get_technology
 
         TECH = get_technology()
 

@@ -3,9 +3,9 @@ from numbers import Number
 from typing import List, Mapping, Tuple, Optional
 from fnpcell import all as fp
 
-from AMFpdk.technology import get_technology
-from AMFpdk.components.straight.straight import Straight
-from AMFpdk.routing.auto_transitioned.auto_transitioned import AutoTransitioned
+from AMFpdk_3_5_Cband.technology import get_technology
+from AMFpdk_3_5_Cband.components.straight.straight import Straight
+from AMFpdk_3_5_Cband.routing.auto_transitioned.auto_transitioned import AutoTransitioned
 
 
 @dataclass(eq=False)
@@ -54,13 +54,13 @@ class Extended(fp.PCell):
 
 
 if __name__ == "__main__":
-    from AMFpdk.util.path import local_output_file
+    from AMFpdk_3_5_Cband.util.path import local_output_file
 
     gds_file = local_output_file(__file__).with_suffix(".gds")
     library = fp.Library()
     TECH = get_technology()
 
-    from AMFpdk.components.mmi.mmi import MMI
+    from AMFpdk_3_5_Cband.components.mmi.mmi import MMI
 
     library += Extended(device=MMI(waveguide_type=TECH.WG.RIB.C.WIRE), lengths={"op_0": 30, "*": 10})
 

@@ -2,10 +2,10 @@ from dataclasses import dataclass
 from typing import Tuple
 from fnpcell import all as fp
 
-from AMFpdk.components.straight.straight import Straight
-from AMFpdk.components.transition.rib2grat_transition import RIB2GRATTransition
-from AMFpdk.components.transition.rib2slab_transition import RIB2SLABTransition
-from AMFpdk.technology import WG, get_technology
+from AMFpdk_3_5_Cband.components.straight.straight import Straight
+from AMFpdk_3_5_Cband.components.transition.rib2grat_transition import RIB2GRATTransition
+from AMFpdk_3_5_Cband.components.transition.rib2slab_transition import RIB2SLABTransition
+from AMFpdk_3_5_Cband.technology import WG, get_technology
 
 @dataclass(eq=False)
 class GRAT2SLABTransition(fp.ICurvedCellRef, fp.PCell):
@@ -92,7 +92,7 @@ class GRAT2SLABTransition(fp.ICurvedCellRef, fp.PCell):
 
 
 if __name__ == "__main__":
-    from AMFpdk.util.path import local_output_file
+    from AMFpdk_3_5_Cband.util.path import local_output_file
 
     gds_file = local_output_file(__file__).with_suffix(".gds")
     library = fp.Library()

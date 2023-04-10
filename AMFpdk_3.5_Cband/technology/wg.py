@@ -1,8 +1,8 @@
 from dataclasses import dataclass
 
 from fnpcell.pdk.technology import all as fpt
-from AMFpdk.technology.interfaces import CoreWaveguideType, SlabWaveguideType
-from AMFpdk.technology.waveguide_factory import StraightFactory, CircularBendFactory, EulerBendFactory
+from AMFpdk_3_5_Cband.technology.interfaces import CoreWaveguideType, SlabWaveguideType
+from AMFpdk_3_5_Cband.technology.waveguide_factory import StraightFactory, CircularBendFactory, EulerBendFactory
 
 # from  gpdk_AMF.technology.waveguide_factory import CircularBendFactory, EulerBendFactory, StraightFactory
 """channel WG only need to define RIB layer"""
@@ -34,13 +34,13 @@ class CHANNEL_C(CoreWaveguideType):
 
     @fpt.const_property
     def band(self):
-        from AMFpdk.technology import get_technology
+        from AMFpdk_3_5_Cband.technology import get_technology
 
         return get_technology().BAND.C
 
     @fpt.const_property
     def wg_layer(self):
-        from AMFpdk.technology import get_technology
+        from AMFpdk_3_5_Cband.technology import get_technology
 
         return get_technology().LAYER.RIB
 
@@ -62,18 +62,18 @@ class RIB_C(SlabWaveguideType):
 
     @fpt.const_property
     def band(self):
-        from AMFpdk.technology import get_technology
+        from AMFpdk_3_5_Cband.technology import get_technology
 
         return get_technology().BAND.C
 
     @fpt.const_property
     def wg_slab_layer(self):
-        from AMFpdk.technology import get_technology
+        from AMFpdk_3_5_Cband.technology import get_technology
         return get_technology().LAYER.SLAB
 
     @fpt.const_property
     def wg_layer(self):
-        from AMFpdk.technology import get_technology
+        from AMFpdk_3_5_Cband.technology import get_technology
         return get_technology().LAYER.RIB
 
     @fpt.const_property
@@ -124,7 +124,7 @@ class WG:
 if __name__ == "__main__":
     from pathlib import Path
     from fnpcell import all as fp
-    from AMFpdk.technology import get_technology
+    from AMFpdk_3_5_Cband.technology import get_technology
 
     TECH = get_technology()
     folder = Path(__file__).parent

@@ -5,8 +5,8 @@ from time import perf_counter
 
 
 def test_examples():
-    AMFpdk_folder = Path(__file__).parent
-    examples_folder = AMFpdk_folder / "examples"
+    AMFpdk_3_5_Cband_folder = Path(__file__).parent
+    examples_folder = AMFpdk_3_5_Cband_folder / "examples"
     pyfiles = tuple(examples_folder.glob("example_*.py"))
     total = len(pyfiles)
     start_at = perf_counter()

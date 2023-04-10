@@ -3,12 +3,12 @@ from dataclasses import dataclass
 from functools import partial
 from typing import Any, Callable, Iterable, List, Optional, Protocol, Sequence, Tuple, cast
 from fnpcell import all as fp
-from AMFpdk.components.sbend.sbend import SBend
-from AMFpdk.components.straight.straight import Straight
-from AMFpdk.routing.auto_transitioned.auto_transitioned import AutoTransitioned
-from AMFpdk.routing.extended.extended import Extended
-from AMFpdk.technology import get_technology
-from AMFpdk.util import all as util
+from AMFpdk_3_5_Cband.components.sbend.sbend import SBend
+from AMFpdk_3_5_Cband.components.straight.straight import Straight
+from AMFpdk_3_5_Cband.routing.auto_transitioned.auto_transitioned import AutoTransitioned
+from AMFpdk_3_5_Cband.routing.extended.extended import Extended
+from AMFpdk_3_5_Cband.technology import get_technology
+from AMFpdk_3_5_Cband.util import all as util
 
 
 class DeviceAdapter(Protocol):
@@ -423,13 +423,13 @@ class CompScanBuilder:
 
 
 if __name__ == "__main__":
-    from AMFpdk.util.path import local_output_file
+    from AMFpdk_3_5_Cband.util.path import local_output_file
 
     gds_file = local_output_file(__file__).with_suffix(".gds")
     library = fp.Library()
     TECH = get_technology()
 
-    from AMFpdk.components.grating_coupler.grating_coupler import GratingCoupler
+    from AMFpdk_3_5_Cband.components.grating_coupler.grating_coupler import GratingCoupler
 
 
     def gc_factory(at: fp.IRay, device: fp.IDevice):
@@ -437,7 +437,7 @@ if __name__ == "__main__":
         return gc, "op_0"
 
 
-    from AMFpdk.technology.waveguide_factory import EulerBendFactory
+    from AMFpdk_3_5_Cband.technology.waveguide_factory import EulerBendFactory
 
 
     def bend_factories(waveguide_type: fp.IWaveguideType):
@@ -448,9 +448,9 @@ if __name__ == "__main__":
         return waveguide_type.bend_factory
 
 
-    from AMFpdk.components.fixed_terminator_te_1550.fixed_terminator_te_1550 import Fixed_Terminator_TE_1550
+    from AMFpdk_3_5_Cband.components.fixed_terminator_te_1550.fixed_terminator_te_1550 import Fixed_Terminator_TE_1550
 
-    from AMFpdk.components.ring_resonator.ring_resonator import RingResonator
+    from AMFpdk_3_5_Cband.components.ring_resonator.ring_resonator import RingResonator
 
 
     def get_ring_resonator_with_terminator(ring_radius: float):
@@ -465,7 +465,7 @@ if __name__ == "__main__":
         )
 
 
-    from AMFpdk.components.ring_filter.ring_filter import RingFilter
+    from AMFpdk_3_5_Cband.components.ring_filter.ring_filter import RingFilter
 
     blocks = [
         Alignment(waveguide_type=TECH.WG.RIB.C.WIRE),
@@ -489,7 +489,7 @@ if __name__ == "__main__":
     # ]
 
     def term_factory(at: fp.IRay, device: fp.IDevice):
-        from AMFpdk.components.fixed_terminator_te_1550.fixed_terminator_te_1550 import Fixed_Terminator_TE_1550
+        from AMFpdk_3_5_Cband.components.fixed_terminator_te_1550.fixed_terminator_te_1550 import Fixed_Terminator_TE_1550
 
         instance = Fixed_Terminator_TE_1550().h_mirrored()
         return instance, "op_0"

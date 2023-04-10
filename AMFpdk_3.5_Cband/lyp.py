@@ -1,11 +1,11 @@
 from pathlib import Path
 from fnpcell import all as fp
 
-from AMFpdk.technology import get_technology
+from AMFpdk_3_5_Cband.technology import get_technology
 
 
 def main():
-    lyp_file = Path(__file__).with_name("AMFpdk.lyp")
+    lyp_file = Path(__file__).with_name("AMFpdk_3_5_Cband.lyp")
 
     fp.export_lyp(get_technology(), file=lyp_file)
 

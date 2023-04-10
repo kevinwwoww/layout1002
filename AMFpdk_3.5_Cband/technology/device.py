@@ -7,12 +7,12 @@ class DEVICE:
     @fpt.classconst
     @classmethod
     def BAND_LAYER(cls):
-        from AMFpdk.technology import get_technology
+        from AMFpdk_3_5_Cband.technology import get_technology
         return get_technology().LAYER.LBL
 
     @classmethod
     def band_annotation(cls, cell: fpt.ICell, bands: Iterable[fpt.IBand]):
-        from AMFpdk.technology import get_technology
+        from AMFpdk_3_5_Cband.technology import get_technology
 
         label = ",".join(band.name for band in bands)
         if not label:

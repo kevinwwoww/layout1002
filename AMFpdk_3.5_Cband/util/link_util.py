@@ -2,7 +2,7 @@ import math
 from typing import Any, List, Optional, cast
 
 from fnpcell import all as fp
-from AMFpdk.components.straight.straight import Straight
+from AMFpdk_3_5_Cband.components.straight.straight import Straight
 
 
 def transition_start(

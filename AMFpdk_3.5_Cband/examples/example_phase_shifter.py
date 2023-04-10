@@ -1,8 +1,8 @@
 from dataclasses import dataclass
 from functools import cached_property
 from fnpcell import all as fp
-from AMFpdk.technology import get_technology
-from AMFpdk.technology.interfaces.AMFwg import CoreWaveguideType, SlabWaveguideType
+from AMFpdk_3_5_Cband.technology import get_technology
+from AMFpdk_3_5_Cband.technology.interfaces.AMFwg import CoreWaveguideType, SlabWaveguideType
 @dataclass(frozen=True)
 class PnPhaseShifterTemplate:
     waveguide_type: CoreWaveguideType = fp.WaveguideTypeParam(type=CoreWaveguideType)
@@ -109,7 +109,7 @@ class PnPhaseShifterTemplate:
 
 
 if __name__ == "__main__":
-    from AMFpdk.util.path import local_output_file
+    from AMFpdk_3_5_Cband.util.path import local_output_file
     gds_file = local_output_file(__file__).with_suffix(".gds")
 
     library = fp.Library()

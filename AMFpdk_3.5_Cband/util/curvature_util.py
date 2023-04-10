@@ -36,7 +36,7 @@ def plot_curvature(curve: fp.ICurve):
 
 
 if __name__ == "__main__":
-    from AMFpdk.technology import get_technology
+    from AMFpdk_3_5_Cband.technology import get_technology
     import warnings
 
     warnings.simplefilter("error")

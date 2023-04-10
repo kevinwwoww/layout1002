@@ -1,5 +1,5 @@
 from fnpcell import all as fp
-from AMFpdk.technology import get_technology
+from AMFpdk_3_5_Cband.technology import get_technology
 
 
 if __name__ == "__main__":

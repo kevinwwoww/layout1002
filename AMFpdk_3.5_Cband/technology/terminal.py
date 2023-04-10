@@ -8,7 +8,7 @@ class PORT:
 
     @staticmethod
     def ICON_LAYER(waveguide_type: fp.IWaveguideType):
-        from AMFpdk.technology import get_technology
+        from AMFpdk_3_5_Cband.technology import get_technology
 
         LAYER = get_technology().LAYER
         layer: ILayer = waveguide_type.wg_layer
@@ -16,7 +16,7 @@ class PORT:
 
     @staticmethod
     def TEXT_LAYER(waveguide_type: fp.IWaveguideType):
-        from AMFpdk.technology import get_technology
+        from AMFpdk_3_5_Cband.technology import get_technology
 
         return get_technology().LAYER.MARKER
 
@@ -27,10 +27,10 @@ class PIN:
 
     @staticmethod
     def ICON_LAYER(layer: fp.IMetalLineType):
-        from AMFpdk.technology import get_technology
+        from AMFpdk_3_5_Cband.technology import get_technology
         return get_technology().LAYER.LBL
 
     @staticmethod
     def TEXT_LAYER(layer: fp.IMetalLineType):
-        from AMFpdk.technology import get_technology
+        from AMFpdk_3_5_Cband.technology import get_technology
         return get_technology().LAYER.MARKER

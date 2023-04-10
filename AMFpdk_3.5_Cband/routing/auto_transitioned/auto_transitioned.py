@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from typing import List, Mapping, Tuple
 from fnpcell import all as fp
-from AMFpdk.technology import get_technology
+from AMFpdk_3_5_Cband.technology import get_technology
 
 
 @dataclass(eq=False)
@@ -39,13 +39,13 @@ class AutoTransitioned(fp.PCell):
 
 
 if __name__ == "__main__":
-    from AMFpdk.util.path import local_output_file
+    from AMFpdk_3_5_Cband.util.path import local_output_file
 
     gds_file = local_output_file(__file__).with_suffix(".gds")
     library = fp.Library()
     TECH = get_technology()
 
-    from AMFpdk.components.mmi.mmi import MMI
+    from AMFpdk_3_5_Cband.components.mmi.mmi import MMI
 
     library += AutoTransitioned(device=MMI(waveguide_type=TECH.WG.SLAB.C.WIRE),
                                 waveguide_types={"*": TECH.WG.GRAT.C.WIRE})

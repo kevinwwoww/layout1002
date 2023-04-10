@@ -13,7 +13,7 @@ from fnpcell import all as fp
 #
 if __name__ == "__main__":
     folder = Path(__file__).parent
-    generated_folder = folder / "generated_AMF"
+    generated_folder = folder / "generated"
     csv_file = folder / "layers.csv"
     layer_file = generated_folder / "layers.py"
     display_file = generated_folder / "display.py"
