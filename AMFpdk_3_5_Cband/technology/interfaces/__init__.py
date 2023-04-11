@@ -1,6 +1,6 @@
 # type: ignore
 
-from .AMFwg import CoreWaveguideType as CoreWaveguideType
-from .AMFwg import SlabWaveguideType as SlabWaveguideType
+from .wg import CoreWaveguideType as CoreWaveguideType
+# from .wg import SlabWaveguideType as SlabWaveguideType
 
-from .AMFmetal import SlotMetalLineType,CrackedMetalLineType
+from .AMFmetal import SlotMetalLineType, CrackedMetalLineType

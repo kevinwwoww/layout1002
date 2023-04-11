@@ -10,7 +10,7 @@ from openpyxl.styles import Font
 
 from fnpcell.ansi.term import Color, print_ansi, style
 from fnpcell.interfaces import IProcessor, IRunnable, IUpdatable
-from AMFpdk.util.pdk_spec.interfaces import ICheckRule, IRuleLib
+from AMFpdk_3_5_Cband.util.pdk_spec.interfaces import ICheckRule, IRuleLib
 
 _T = Union[None, ICheckRule, Iterable["_T"]]
 

@@ -3,8 +3,8 @@ from typing import  Tuple, List, cast
 from fnpcell import all as fp
 from fnpcell.pdk.technology import all as fpt
 
-from AMFpdk.technology.interfaces import CrackedMetalLineType
-from AMFpdk.technology.metal import METAL
+from AMFpdk_3_5_Cband.technology.interfaces import CrackedMetalLineType
+from AMFpdk_3_5_Cband.technology.metal import METAL
 
 @dataclass(frozen=True)
 class _Vias(fpt.IViasFactory):
@@ -15,9 +15,9 @@ class _Vias(fpt.IViasFactory):
     bottom_layer: fpt.ILayer
 
     def __call__(self, curve: fpt.ICurve, length: float) -> Tuple[fpt.IElement, Tuple[float,float]]:
-        from AMFpdk.components.via.via import Via
-        from AMFpdk.components.via.vias import Vias
-        from AMFpdk.technology import get_technology
+        from AMFpdk_3_5_Cband.components.via.via import Via
+        from AMFpdk_3_5_Cband.components.via.vias import Vias
+        from AMFpdk_3_5_Cband.technology import get_technology
 
         TECH = get_technology()
         spacing = TECH.VIAS.SPACING
@@ -75,7 +75,7 @@ def vias1(end_types: Tuple[fpt.IMetalLineType, fpt.IMetalLineType]) -> fpt.IVias
     a, b = end_types
     assert isinstance(a, CrackedMetalLineType) and isinstance(b, CrackedMetalLineType), f"Unsupported auto vias: [{a}] >> [{b}]"
 
-    from AMFpdk.technology import get_technology
+    from AMFpdk_3_5_Cband.technology import get_technology
     TECH = get_technology()
 
     return _Vias(
@@ -92,7 +92,7 @@ class _Taper(fpt.IViasFactory):
     final_type: CrackedMetalLineType
 
     def __call__(self, curve: fpt.ICurve, length: float) -> Tuple[fpt.IElement, Tuple[float, float]]:
-        from AMFpdk.technology import get_technology
+        from AMFpdk_3_5_Cband.technology import get_technology
 
         TECH = get_technology()
         d = TECH.METRICS.GRID / 4

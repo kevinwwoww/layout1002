@@ -1,0 +1,75 @@
+{
+    "cell_name": "AMF_PSOI_PSiNTOPhaseShifter2_Cband_preview",
+    "layers": {
+      "1001/0": "TECH.LAYER.BLACKBOX",
+      "1002/0": "TECH.LAYER.BB_LABEL",
+      "1011/0": "TECH.LAYER.BB_OP_SIN",
+      "1022/0": "TECH.LAYER.BB_MT2"
+    },
+    "ports": [
+      {
+          "name": "opt_1_sin",
+          "position": [
+            0,
+            0
+          ],
+          "orientation": {
+            "degrees": 180
+          },
+          "waveguide_type": {
+            "override": "TECH.WG.SIN.C.WIRE",
+            "values": {
+              "wg_layout_width": 1.0
+            }
+          }
+      },
+      {
+          "name": "opt_2_sin",
+          "position": [
+            300,
+            0
+          ],
+          "orientation": {
+            "degrees": 0
+          },
+          "waveguide_type": {
+            "override": "TECH.WG.SIN.C.WIRE",
+            "values": {
+              "wg_layout_width": 1.0
+            }
+          }
+      },
+                  {
+          "name": "elec_1_MT2",
+          "position": [
+            49,
+            30
+          ],
+          "orientation": {
+            "degrees": 0
+          },
+          "metal_line_type": {
+            "override": "TECH.METAL.MT2.W20",
+            "values": {
+              "line_width": 20
+            }
+          }
+      },
+                  {
+          "name": "elec_2_MT2",
+          "position": [
+            251,
+            30
+          ],
+          "orientation": {
+            "degrees": 0
+          },
+          "metal_line_type": {
+            "override": "TECH.METAL.MT2.W20",
+            "values": {
+              "line_width": 20
+            }
+          }
+      }
+    ]
+}

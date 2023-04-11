@@ -1,7 +1,7 @@
 from typing import Any, Callable, Dict, Iterable, List, Optional, Union
 
 from fnpcell import all as fp
-from AMFpdk.technology import get_technology
+from AMFpdk_3_5_Cband.technology import get_technology
 
 
 def combine_builds(name: str, specs: Iterable[Dict[str, Any]]) -> fp.IDevice:

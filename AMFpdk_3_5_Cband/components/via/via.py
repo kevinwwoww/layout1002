@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 from fnpcell import all as fp
-from AMFpdk.technology import get_technology
+from AMFpdk_3_5_Cband.technology import get_technology
 from typing import Tuple
 
 
@@ -43,7 +43,7 @@ class Via(fp.PCell):
 
 
 if __name__ == "__main__":
-    from AMFpdk.util.path import local_output_file
+    from AMFpdk_3_5_Cband.util.path import local_output_file
 
     gds_file = local_output_file(__file__).with_suffix(".gds")
     library = fp.Library()

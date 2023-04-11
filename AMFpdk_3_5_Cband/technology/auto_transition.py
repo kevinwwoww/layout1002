@@ -1,11 +1,11 @@
 from typing import Tuple, cast
 from fnpcell.pdk.technology import all as fpt
-from AMFpdk.technology.interfaces import CoreWaveguideType
-from AMFpdk.technology.wg import WG
+from AMFpdk_3_5_Cband.technology.interfaces import CoreWaveguideType
+from AMFpdk_3_5_Cband.technology.wg import WG
 
 
 def _c_grat2slab(end_types: Tuple[fpt.IWaveguideType, fpt.IWaveguideType]):
-    from AMFpdk.components.transition.grat2slab_transition import GRAT2SLABTransition
+    from AMFpdk_3_5_Cband.components.transition.grat2slab_transition import GRAT2SLABTransition
 
     a = end_types[0]
     b = end_types[1]
@@ -16,7 +16,7 @@ def _c_grat2slab(end_types: Tuple[fpt.IWaveguideType, fpt.IWaveguideType]):
 
 
 def _c_rib2grat(end_types: Tuple[fpt.IWaveguideType, fpt.IWaveguideType]):
-    from AMFpdk.components.transition.rib2grat_transition import RIB2GRATTransition
+    from AMFpdk_3_5_Cband.components.transition.rib2grat_transition import RIB2GRATTransition
 
     a = end_types[0]
     b = end_types[1]
@@ -27,7 +27,7 @@ def _c_rib2grat(end_types: Tuple[fpt.IWaveguideType, fpt.IWaveguideType]):
 
 
 def _c_rib2slab(end_types: Tuple[fpt.IWaveguideType, fpt.IWaveguideType]):
-    from AMFpdk.components.transition.rib2slab_transition import RIB2SLABTransition
+    from AMFpdk_3_5_Cband.components.transition.rib2slab_transition import RIB2SLABTransition
 
     a = end_types[0]
     b = end_types[1]
@@ -42,7 +42,7 @@ class _Taper:
         self.slope = slope
 
     def __call__(self, end_types: Tuple[fpt.IWaveguideType, fpt.IWaveguideType]):
-        from AMFpdk.components.taper.taper_linear import TaperLinear
+        from AMFpdk_3_5_Cband.components.taper.taper_linear import TaperLinear
 
         a = cast(CoreWaveguideType, end_types[0])
         b = cast(CoreWaveguideType, end_types[1])

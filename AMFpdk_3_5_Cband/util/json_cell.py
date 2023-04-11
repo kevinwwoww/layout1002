@@ -42,7 +42,7 @@ class JsonCell(fp.PCell):
         return self.root_folder
 
     def _default_gds_name(self) -> fp.StrPath:
-        return self.stem_name
+        return self.gds_name
 
     def _default_gds_path(self) -> Optional[fp.StrPath]:
         gds_folder = self.gds_folder

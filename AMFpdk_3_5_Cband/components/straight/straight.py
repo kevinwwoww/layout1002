@@ -4,7 +4,7 @@ from typing import Tuple
 
 from fnpcell import all as fp
 from fnpcell.interfaces import angle_between, distance_between
-from AMFpdk.technology import get_technology
+from AMFpdk_3_5_Cband.technology import get_technology
 
 
 @dataclass(eq=False)
@@ -63,7 +63,7 @@ def StraightBetween(
 
 
 if __name__ == "__main__":
-    from AMFpdk.util.path import local_output_file
+    from AMFpdk_3_5_Cband.util.path import local_output_file
 
     gds_file = local_output_file(__file__).with_suffix(".gds")
     library = fp.Library()

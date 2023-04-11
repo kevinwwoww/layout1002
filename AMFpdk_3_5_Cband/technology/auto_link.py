@@ -2,7 +2,7 @@ from typing import Tuple
 
 from fnpcell.pdk.technology import all as fpt
 
-from AMFpdk.technology.wg import WG
+from AMFpdk_3_5_Cband.technology.wg import WG
 
 
 class LinkPrefer:

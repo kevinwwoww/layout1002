@@ -52,10 +52,10 @@ def _distribution_version(name: str):
         import fnpcell
 
         return fnpcell.__version__
-    elif name == "AMFpdk":
-        import AMFpdk
+    elif name == "AMFpdk_3_5_Cband":
+        import AMFpdk_3_5_Cband
 
-        return AMFpdk.__version__
+        return AMFpdk_3_5_Cband.__version__
 
     try:
         return version(name)

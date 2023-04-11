@@ -34,7 +34,7 @@ class TPoint2D(Tuple[float, float]):
 
 if __name__ == "__main__":
 
-    from AMFpdk.technology import get_technology
+    from AMFpdk_3_5_Cband.technology import get_technology
 
     p = TPoint2D(0, 0)
     points = [p, p.translated(100, 0), p.translated(100, 0).rotated(degrees=30)]
