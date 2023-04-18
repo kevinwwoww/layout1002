@@ -128,7 +128,7 @@ if __name__ == "__main__":
 
     # Define the environment of simulation. Note that "wl_start", "wl_end", and "points_num" are necessary
     # You can also define some custom parameters, such as "T" or others
-    env = dict(wl_start=1.45, wl_end=1.55, points_num=101, T=300)
+    env = dict(wl_start=1.26, wl_end=1.34, points_num=101, T=300)
     # Define the path of the netlist file
     spc_filename = Path(__file__).parent / "local" / Path(__file__).with_suffix(".spc").name
     # Export the netlist file

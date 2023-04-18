@@ -91,6 +91,11 @@ class METAL:
 
         @fpt.classconst
         @classmethod
+        def W70(cls):
+            return cls(line_width=70)
+
+        @fpt.classconst
+        @classmethod
         def W80(cls):
             return cls(line_width=80)
 

@@ -7,7 +7,7 @@ from dataclasses import dataclass
 from fnpcell import all as fp
 from fnpcell.pdk.technology import all as fpt
 from gpdk import all as pdk
-from gpdk.technology import PCell, get_technology
+from gpdk.technology import get_technology
 
 @dataclass(eq=False)
 class demux(fp.PCell):
@@ -96,7 +96,7 @@ class demux(fp.PCell):
         return insts, elems, ports
 
 @dataclass(eq=False)
-class demux4(PCell):
+class demux4(fp.PCell):
     def build(self):
         insts, elems, ports = super().build()
         TECH = get_technology()
@@ -175,11 +175,13 @@ class demux4(PCell):
 
         # fmt: on
         return insts, elems, ports
+
+
 if __name__ == "__main__":
     from pathlib import Path
 
     gds_file = Path(__file__).parent / "local" / Path(__file__).with_suffix(".gds").name
-    spc_filename = Path(__file__).parent / "local" / Path(__file__).with_suffix(".spc").name
+    # spc_filename = Path(__file__).parent / "local" / Path(__file__).with_suffix(".spc").name
     device = fp.Library()
 
     TECH = get_technology()
@@ -193,42 +195,56 @@ if __name__ == "__main__":
     device += demux4()
     #
     # fp.export_gds(device, file=gds_file)
-    fp.plot(device)
+    # fp.plot(device)
 
     # fp.plot(device)
     #
     # start execution simulation
-    # import sflow as sf
-    # import matplotlib.pyplot as plt
+    import sflow as sf
+    import matplotlib.pyplot as plt
     #
-    # components = gpdk.components.all
+    components = gpdk.components.all
     #
     # env = sf.PsimEnvironment(wl_start=1.26, wl_end=1.36, points_num=100, source_power=0, input_ports=["p_0"],
     #                          output_ports=["p_1", "p_2", "p_3", "p_4", "p_5", "p_6", "p_7", "p_8"])
     # fp.export_spc(device, file=spc_filename, components=components, sim_env=fp.sim.Env(wavelength=env.wl_range))
     #
     # sim_result = sf.run_sim(spc_filename, env, is_print_netlist=True)
-    #
-    # data_1 = sim_result["p_1"]
-    # data_2 = sim_result["p_2"]
-    # data_3 = sim_result["p_3"]
-    # data_4 = sim_result["p_4"]
-    # data_5 = sim_result["p_5"]
-    # data_6 = sim_result["p_6"]
-    # data_7 = sim_result["p_7"]
-    # data_8 = sim_result["p_8"]
-    # plt.plot(data_1["wl"], data_1["te_gain"], label="trans_p1")
-    # plt.plot(data_2["wl"], data_2["te_gain"], label="trans_p2")
-    # plt.plot(data_3["wl"], data_3["te_gain"], label="trans_p3")
-    # plt.plot(data_4["wl"], data_4["te_gain"], label="trans_p4")
-    # plt.plot(data_5["wl"], data_5["te_gain"], label="trans_p5")
-    # plt.plot(data_6["wl"], data_6["te_gain"], label="trans_p6")
-    # plt.plot(data_7["wl"], data_7["te_gain"], label="trans_p7")
-    # plt.plot(data_8["wl"], data_8["te_gain"], label="trans_p8")
-    #
-    # plt.legend()
-    # plt.show()
-#
+
+    env = dict(wl_start=1.26, wl_end=1.34, points_num=101, T=300)
+    # Define the path of the netlist file
+    spc_filename = Path(__file__).parent / "local" / Path(__file__).with_suffix(".spc").name
+    # Export the netlist file
+    fp.export_spc(device, file=spc_filename, components=components, sim_env=fp.sim.Env(**env))
+    # Run simulation
+    sim_result = sf.run_sim(
+        input_ports=["p_0"],  # Define the port which optical signal input
+        output_ports=["p_1", "p_2", "p_3", "p_4", "p_5", "p_6", "p_7", "p_8"],  # Define the ports which optical signal output
+        env=env,  # Define the environment
+        netlist_file=spc_filename,  # Define the netlist file
+        is_print_netlist=False  # Defines whether to print a simplified netlist information
+    )
+
+    data_1 = sim_result["p_1"]
+    data_2 = sim_result["p_2"]
+    data_3 = sim_result["p_3"]
+    data_4 = sim_result["p_4"]
+    data_5 = sim_result["p_5"]
+    data_6 = sim_result["p_6"]
+    data_7 = sim_result["p_7"]
+    data_8 = sim_result["p_8"]
+    plt.plot(data_1["wl"], data_1["te_gain"], label="trans_p1")
+    plt.plot(data_2["wl"], data_2["te_gain"], label="trans_p2")
+    plt.plot(data_3["wl"], data_3["te_gain"], label="trans_p3")
+    plt.plot(data_4["wl"], data_4["te_gain"], label="trans_p4")
+    plt.plot(data_5["wl"], data_5["te_gain"], label="trans_p5")
+    plt.plot(data_6["wl"], data_6["te_gain"], label="trans_p6")
+    plt.plot(data_7["wl"], data_7["te_gain"], label="trans_p7")
+    plt.plot(data_8["wl"], data_8["te_gain"], label="trans_p8")
+
+    plt.legend()
+    plt.show()
+
 #
 #
 #

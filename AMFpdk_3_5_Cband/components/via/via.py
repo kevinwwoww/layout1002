@@ -37,7 +37,11 @@ class Via(fp.PCell):
 
         elems += fp.el.Polygon(self.top_shape, layer=self.top_layer)
         elems += fp.el.Polygon(self.via_shape, layer=self.via_layer)
+        # elems += fp.el.Rect(width=10, height=10, layer=TECH.LAYER.RIB, center=(10, 10))
         elems += fp.el.Polygon(self.bottom_shape, layer=self.bottom_layer)
+        # bb = fp.el.PolygonSet.with_layer(self=aa, layer=TECH.LAYER.SINWG1)
+        # elems += bb
+
 
         return insts, elems, ports
 
@@ -50,5 +54,15 @@ if __name__ == "__main__":
     TECH = get_technology()
 
     library += Via()
+    # Via().translated()
+    # Via().h_mirrored()
+    # Via().v_mirrored()
+    # Via().c_mirrored()
+    # Via().rotated()
+
+
+
+
 
     fp.export_gds(library, file=gds_file)
+    fp.plot(library)

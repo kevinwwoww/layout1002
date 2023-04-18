@@ -25,7 +25,8 @@ class Straight(fp.IWaveguideLike, fp.PCell):
     ![Straight](images/straight.png)
     """
 
-    length: float = fp.FloatParam(default=10, min=0)
+    Length: float = fp.FloatParam(default=10, min=0)
+    Width: float = fp.FloatParam(default=0.5, min=0)
     waveguide_type: fp.IWaveguideType = fp.WaveguideTypeParam()
     anchor: fp.Anchor = fp.AnchorParam(default=fp.Anchor.START)
     port_names: fp.IPortOptions = fp.PortOptionsParam(count=2, default=("op_0", "op_1"))
@@ -36,9 +37,10 @@ class Straight(fp.IWaveguideLike, fp.PCell):
     @cached_property
     def raw_curve(self):
         return fp.g.Line(
-            length=self.length,
+            length=self.Length,
             anchor=self.anchor,
         )
+
 
     def build(self) -> Tuple[fp.InstanceSet, fp.ElementSet, fp.PortSet]:
         insts, elems, ports = super().build()
@@ -72,7 +74,7 @@ if __name__ == "__main__":
     # =============================================================
     # fmt: off
 
-    library += Straight(waveguide_type=TECH.WG.RIB.C.WIRE)
+    library += Straight(waveguide_type=TECH.WG.SIN.C.WIRE)
 
     # fmt: on
     # =============================================================

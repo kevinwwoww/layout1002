@@ -16,7 +16,6 @@ if __name__ == "__main__":
     library = fp.Library()
     TECH = get_technology()
 
-    # library += JsonCell(gds_name="AMF_PSOI_Cband_merge_bb", stem_name="AMF_PSOI_PSiNCrossing_Cband_v3p0", json_name="AMF_PSOI_PSiNCrossing_Cband_v3p0", root_folder=Path(__file__).parent, gds_folder=Path(__file__).parent)
     library += JsonCell(stem_name="AMF_PSOI_PSiNCrossing_Cband_v3p0", root_folder=Path(__file__).parent, gds_name="AMF_PSOI_Cband_merge_bb")
     library += AMF_PSOI_PSiNCrossing_Cband_v3p0()
 

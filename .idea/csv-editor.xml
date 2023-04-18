@@ -59,13 +59,6 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="\AMFpdk_3.5_Cband\technology\layers.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
         <entry key="\AMFpdk_3_5_Cband\technology\generated\wg.csv">
           <value>
             <Attribute>

@@ -2,7 +2,7 @@ from dataclasses import dataclass
 
 from fnpcell.pdk.technology import all as fpt
 from AMFpdk_3_5_Cband.technology.interfaces import CoreWaveguideType
-from AMFpdk_3_5_Cband.technology.waveguide_factory import StraightFactory, CircularBendFactory, EulerBendFactory
+from AMFpdk_3_5_Cband.technology.waveguide_factory import StraightFactory, CircularBendFactory
 
 # from  gpdk_AMF.technology.waveguide_factory import CircularBendFactory, EulerBendFactory, StraightFactory
 """channel WG only need to define RIB layer"""

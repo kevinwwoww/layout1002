@@ -1,4 +1,5 @@
 {
+    "library_path": "AMF_PSOI_Cband_merge_bb.gds",
     "cell_name": "AMF_PSOI_PD110G_Cband_v3p5",
     "layers": {
       "1001/0": "TECH.LAYER.BLACKBOX",

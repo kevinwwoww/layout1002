@@ -57,12 +57,12 @@ class AUTO_TRANSITION:
     def DEFAULT(cls):
         return fpt.AutoTransition().updated(
             [
-                (WG.RIB.C >> WG.GRAT.C, _c_rib2grat),
-                (WG.RIB.C >> WG.SLAB.C, _c_rib2slab),
-                (WG.GRAT.C >> WG.SLAB.C, _c_grat2slab),
-                #
-                (WG.SLAB.C >> WG.SLAB.C, _Taper(0.2)),
-                (WG.RIB.C >> WG.RIB.C, _Taper(0.2)),
-                (WG.GRAT.C >> WG.GRAT.C, _Taper(0.2)),
+                # (WG.RIB.C >> WG.GRAT.C, _c_rib2grat),
+                # (WG.RIB.C >> WG.SLAB.C, _c_rib2slab),
+                # (WG.GRAT.C >> WG.SLAB.C, _c_grat2slab),
+
+                # (WG.SLAB.C >> WG.SLAB.C, _Taper(0.2)),
+                # (WG.RIB.C >> WG.RIB.C, _Taper(0.2)),
+                # (WG.GRAT.C >> WG.GRAT.C, _Taper(0.2)),
             ]
         )

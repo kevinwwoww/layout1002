@@ -8,7 +8,7 @@ from AMFpdk_3_5_Cband.technology import get_technology, WG
 
 
 @dataclass(eq=False)
-class BendCircular(fp.IWaveguideLike, fp.PCell):
+class Bend(fp.IWaveguideLike, fp.PCell):
     """
     Attributes:
         degrees: central angle of the bend, in degrees
@@ -24,10 +24,12 @@ class BendCircular(fp.IWaveguideLike, fp.PCell):
     ```
     ![BendCircular](images/bend_circular.png)
     """
-
-    degrees: float = fp.DegreeParam(default=90, min=-180, max=180, doc="Bend angle in degrees")
+    Width: float = fp.PositiveFloatParam(default=1.0, doc="Bend width")
+    StartAngle: float = fp.DegreeParam(default=0, min=0, max=360, doc="Bend start angle in degree")
+    EndAngle: float = fp.DegreeParam(default=90, min=-180, max=180, doc="Bend start angle in degree")
+    # degrees: float = fp.DegreeParam(default=90, min=-180, max=180, doc="Bend angle in degrees")
     # Channel bend ( Si Bend 5 um radius ), set by AMF process manual
-    radius: float = fp.PositiveFloatParam(default=5, doc="Bend radius")
+    Radius: float = fp.PositiveFloatParam(default=10, doc="Bend radius")
     waveguide_type: fp.IWaveguideType = fp.WaveguideTypeParam(doc="Waveguide parameters")
     port_names: fp.IPortOptions = fp.PortOptionsParam(count=2, default=["op_0", "op_1"])
 
@@ -35,13 +37,14 @@ class BendCircular(fp.IWaveguideLike, fp.PCell):
         return get_technology().WG.CHANNEL.C.WIRE
 
     def __post_pcell_init__(self):
-        assert fp.is_nonzero(self.degrees)
+        assert fp.is_nonzero(self.EndAngle)
 
     @cached_property
     def raw_curve(self):
         return fp.g.EllipticalArc(
-            radius=self.radius,
-            final_degrees=self.degrees,
+            radius=self.Radius,
+            initial_degrees=self.StartAngle,
+            final_degrees=self.EndAngle,
         )
 
     def build(self) -> Tuple[fp.InstanceSet, fp.ElementSet, fp.PortSet]:
@@ -52,20 +55,9 @@ class BendCircular(fp.IWaveguideLike, fp.PCell):
         return insts, elems, ports
 
 
-@dataclass(eq=False)
-class CHANNELBendCircular90(BendCircular):
-    degrees: float = fp.DegreeParam(default=90, locked=True)
-    waveguide_type: get_technology().WG.CHANNEL.C.WIRE = fp.WaveguideTypeParam(locked=True)
-
-
-@dataclass(eq=False)
-class RIBBendCircular90(BendCircular):
-    degrees: float = fp.DegreeParam(default=90, locked=True)
-    radius: float = fp.PositiveFloatParam(default=20, doc="Bend_radius")
-    waveguide_type: fp.IWaveguideType = fp.WaveguideTypeParam(doc="Waveguide parameters")
-
-    def _default_waveguide_type(self):
-        return get_technology().WG.RIB.C.WIRE
+class Bend90(Bend):
+    StartAngle: float = fp.DegreeParam(default=0, locked=True)
+    EndAngle: float = fp.DegreeParam(default=90, locked=True)
 
 
 if __name__ == "__main__":
@@ -76,7 +68,8 @@ if __name__ == "__main__":
 
     TECH = get_technology()
 
-    library += RIBBendCircular90()
+    library += Bend(Width=5)
+    # library += Bend90(Radius=20, Width=5)
 
     # fp.export_gds(library, file=gds_file)
     fp.plot(library)

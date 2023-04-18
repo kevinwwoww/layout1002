@@ -33,8 +33,8 @@ class LINKING_POLICY:
             [
                 (type(WG.CHANNEL.C.WIRE) >> type(WG.CHANNEL.C.WIRE), LinkPrefer(WG.CHANNEL.C.WIRE),
                  BendUsing(WG.CHANNEL.C.WIRE.BEND_CIRCULAR)),
-                (type(WG.RIB.C.WIRE) >> type(WG.RIB.C.WIRE), LinkPrefer(WG.RIB.C.WIRE),
-                 BendUsing(WG.RIB.C.WIRE.BEND_CIRCULAR)),
+                # (type(WG.RIB.C.WIRE) >> type(WG.RIB.C.WIRE), LinkPrefer(WG.RIB.C.WIRE),
+                #  BendUsing(WG.RIB.C.WIRE.BEND_CIRCULAR)),
 
             ]
         )

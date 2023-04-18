@@ -2,7 +2,6 @@
 
 from fnpcell.pdk.technology.all import Layer, LayerEnum, Process, ProcessEnum, Purpose, PurposeEnum
 
-
 class PROCESS(ProcessEnum):
     AMARK = Process(0, 'AMARK')
     RIB_WG = Process(10, 'RIB_WG')
@@ -42,11 +41,9 @@ class PROCESS(ProcessEnum):
     MARKER = Process(201, 'MARKER')
     BLACK_FP = Process(202, 'BLACK_FP')
 
-
 class PURPOSE(PurposeEnum):
     DRW = Purpose(0, 'DRW')
     GEN = Purpose(4, 'GEN')
-
 
 class LAYER(LayerEnum):
     AMARK = Layer(PROCESS.AMARK, PURPOSE.DRW, 'Alignment mark')

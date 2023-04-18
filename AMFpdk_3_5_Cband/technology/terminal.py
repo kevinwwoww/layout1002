@@ -22,8 +22,8 @@ class PORT:
 
 
 class PIN:
-    LENGTH = 0.3
-    OFFSET = -0.15
+    LENGTH = 1
+    OFFSET = -0.5
 
     @staticmethod
     def ICON_LAYER(layer: fp.IMetalLineType):
