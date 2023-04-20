@@ -59,7 +59,7 @@ def StraightBetween(
 ):
     length = distance_between(end, start)
     orientation = angle_between(end, start)
-    straight = Straight(length=length, waveguide_type=waveguide_type, port_names=port_names).rotated(
+    straight = Straight(Length=length, waveguide_type=waveguide_type, port_names=port_names).rotated(
         radians=orientation).translated(*start)
     return straight
 
@@ -74,7 +74,7 @@ if __name__ == "__main__":
     # =============================================================
     # fmt: off
 
-    library += Straight(waveguide_type=TECH.WG.SIN.C.WIRE)
+    library += Straight(waveguide_type=TECH.WG.SLAB.C.WIRE)
 
     # fmt: on
     # =============================================================

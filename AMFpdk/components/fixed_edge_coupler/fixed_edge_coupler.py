@@ -30,3 +30,4 @@ if __name__ == "__main__":
     library += Fixed_Edge_Coupler()
 
     fp.export_gds(library, file=gds_file)
+    fp.plot(library)

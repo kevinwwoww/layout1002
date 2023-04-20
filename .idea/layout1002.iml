@@ -5,7 +5,6 @@
       <excludeFolder url="file://$MODULE_DIR$/.venv_layout1002" />
       <excludeFolder url="file://$MODULE_DIR$/.scripts" />
       <excludeFolder url="file://$MODULE_DIR$/.vscode" />
-      <excludeFolder url="file://$MODULE_DIR$/AMFpdk" />
       <excludeFolder url="file://$MODULE_DIR$/imLic_AMF" />
       <excludeFolder url="file://$MODULE_DIR$/layout01" />
       <excludeFolder url="file://$MODULE_DIR$/AMFpdk_3.5_Oband" />
@@ -15,6 +14,7 @@
       <excludeFolder url="file://$MODULE_DIR$/IMECAS_pdk" />
       <excludeFolder url="file://$MODULE_DIR$/IMECAS_SiN_pdk" />
       <excludeFolder url="file://$MODULE_DIR$/IMECAS_SiN_pdk_1_0_0" />
+      <excludeFolder url="file://$MODULE_DIR$/AMFpdk_3_5_Cband_0420" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

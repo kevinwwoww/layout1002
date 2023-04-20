@@ -1244,8 +1244,8 @@ READTHEDOCS_DATA = JSON.parse(document.getElementById('READTHEDOCS_DATA').innerH
 <li class="toctree-l4"><a class="reference internal" href="example_manual/example_link_smooth.py.html#full-script">Full script</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="example_manual/example_linked_splitter.py.html">LinkedSplitter</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="example_manual/example_linked_splitter.py.html#full-script">Full script</a></li>
+<li class="toctree-l3"><a class="reference internal" href="example_manual/link.py.html">LinkedSplitter</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="example_manual/link.py.html#full-script">Full script</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="example_manual/example_linked_elec2.py.html">Linked Electrical wire</a><ul>

@@ -24,17 +24,17 @@ class Bend(fp.IWaveguideLike, fp.PCell):
     ```
     ![BendCircular](images/bend_circular.png)
     """
-    Width: float = fp.PositiveFloatParam(default=1.0, doc="Bend width")
-    StartAngle: float = fp.DegreeParam(default=0, min=0, max=360, doc="Bend start angle in degree")
+    Width: float = fp.PositiveFloatParam(default=0.5, doc="Bend width")
+    # StartAngle: float = fp.DegreeParam(default=0, min=0, max=360, doc="Bend start angle in degree")
     EndAngle: float = fp.DegreeParam(default=90, min=-180, max=180, doc="Bend start angle in degree")
     # degrees: float = fp.DegreeParam(default=90, min=-180, max=180, doc="Bend angle in degrees")
     # Channel bend ( Si Bend 5 um radius ), set by AMF process manual
-    Radius: float = fp.PositiveFloatParam(default=10, doc="Bend radius")
+    Radius: float = fp.PositiveFloatParam(default=5, doc="Bend radius")
     waveguide_type: fp.IWaveguideType = fp.WaveguideTypeParam(doc="Waveguide parameters")
     port_names: fp.IPortOptions = fp.PortOptionsParam(count=2, default=["op_0", "op_1"])
 
     def _default_waveguide_type(self):
-        return get_technology().WG.CHANNEL.C.WIRE
+        return get_technology().WG.CHANNEL.C.WIRE.updated(wg_design_width=self.Width)
 
     def __post_pcell_init__(self):
         assert fp.is_nonzero(self.EndAngle)
@@ -43,20 +43,22 @@ class Bend(fp.IWaveguideLike, fp.PCell):
     def raw_curve(self):
         return fp.g.EllipticalArc(
             radius=self.Radius,
-            initial_degrees=self.StartAngle,
+            # initial_degrees=self.StartAngle,
             final_degrees=self.EndAngle,
         )
+
 
     def build(self) -> Tuple[fp.InstanceSet, fp.ElementSet, fp.PortSet]:
         insts, elems, ports = super().build()
         wg = self.waveguide_type(curve=self.raw_curve).with_ports(self.port_names)
         insts += wg
         ports += wg.ports
+
         return insts, elems, ports
 
 
 class Bend90(Bend):
-    StartAngle: float = fp.DegreeParam(default=0, locked=True)
+    # StartAngle: float = fp.DegreeParam(default=0, locked=True)
     EndAngle: float = fp.DegreeParam(default=90, locked=True)
 
 
@@ -68,8 +70,8 @@ if __name__ == "__main__":
 
     TECH = get_technology()
 
-    library += Bend(Width=5)
-    # library += Bend90(Radius=20, Width=5)
+    # library += Bend(Width=2)
+    library += Bend90(Radius=20)
 
     # fp.export_gds(library, file=gds_file)
     fp.plot(library)

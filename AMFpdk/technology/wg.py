@@ -2,7 +2,7 @@ from dataclasses import dataclass
 
 from fnpcell.pdk.technology import all as fpt
 from AMFpdk.technology.interfaces import CoreWaveguideType, SlabWaveguideType
-from AMFpdk.technology.waveguide_factory import StraightFactory, CircularBendFactory, EulerBendFactory
+from AMFpdk.technology.waveguide_factory import StraightFactory, CircularBendFactory
 
 # from  gpdk_AMF.technology.waveguide_factory import CircularBendFactory, EulerBendFactory, StraightFactory
 """channel WG only need to define RIB layer"""
@@ -107,7 +107,7 @@ class WG:
             def WIRE():
                 @dataclass(frozen=True)
                 class WIRE(__class__):
-                    wg_rib_design_width: float = RIB_WIDTH
+                    wg_design_width: float = RIB_WIDTH
                     wg_slab_design_width: float = SLAB_WIDTH
 
                     @fpt.const_property

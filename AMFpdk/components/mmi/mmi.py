@@ -20,7 +20,7 @@ class MMI(fp.PCell):
     waveguide_type: CoreWaveguideType = fp.WaveguideTypeParam(type=CoreWaveguideType)
 
     def _default_waveguide_type(self):
-        return get_technology().WG.RIB.C.WIRE
+        return get_technology().WG.CHANNEL.C.WIRE
 
     def build(self) -> Tuple[fp.InstanceSet, fp.ElementSet, fp.PortSet]:
         insts, elems, ports = super().build()
@@ -73,7 +73,8 @@ if __name__ == "__main__":
 
     TECH = get_technology()
 
-    library += MMI(name="s", n_inputs=2, waveguide_type=TECH.WG.GRAT.C.WIRE)
+    library += MMI(name="s", n_inputs=2, waveguide_type=TECH.WG.CHANNEL.C.WIRE)
     library += MMI1x2()
 
     fp.export_gds(library, file=gds_file)
+    fp.plot(library)

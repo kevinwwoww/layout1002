@@ -21,3 +21,4 @@ if __name__ == "__main__":
     library += Fixed_voa_al_c()
 
     fp.export_gds(library, file=gds_file)
+    fp.plot(library)

@@ -19,7 +19,7 @@ class BendCircular(fp.IWaveguideLike, fp.PCell):
     Examples:
     ```python
     TECH = get_technology()
-        bend = BendCircular(name="s", radius=5, waveguide_type=TECH.WG.RIB.C.WIRE)
+        bend = BendCircular(name="s", radius=5, waveguide_type=TECH.WG.CHANNEL.C.WIRE)
     fp.plot(bend)
     ```
     ![BendCircular](images/bend_circular.png)

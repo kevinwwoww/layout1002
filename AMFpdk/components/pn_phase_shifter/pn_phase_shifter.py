@@ -11,11 +11,11 @@ class PnPhaseShifter(fp.PCell):
     n_width: float = fp.PositiveFloatParam(default=1)
     np_offset: float = fp.FloatParam(default=0)
     wg_length: float = fp.PositiveFloatParam(default=25)
-    waveguide_type: WG.RIB.C = fp.WaveguideTypeParam(type=WG.RIB.C)
+    waveguide_type: WG.CHANNEL.C = fp.WaveguideTypeParam(type=WG.CHANNEL.C)
     port_names: fp.IPortOptions = fp.PortOptionsParam(count=4, default=["op_0", "op_1", "ep_0", "ep_1"])
 
     def _default_waveguide_type(self):
-        return get_technology().WG.RIB.C.WIRE
+        return get_technology().WG.CHANNEL.C.WIRE
 
     def build(self) -> Tuple[fp.InstanceSet, fp.ElementSet, fp.PortSet]:
         insts, elems, ports = super().build()

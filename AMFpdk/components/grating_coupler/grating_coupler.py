@@ -19,7 +19,7 @@ class GratingCoupler(fp.PCell):
     port_names: fp.IPortOptions = fp.PortOptionsParam(count=1, default=["op_0"])
 
     def _default_waveguide_type(self):
-        return get_technology().WG.RIB.C.WIRE
+        return get_technology().WG.CHANNEL.C.WIRE
 
     def build(self) -> Tuple[fp.InstanceSet, fp.ElementSet, fp.PortSet]:
         insts, elems, ports = super().build()
@@ -40,7 +40,7 @@ class GratingCoupler(fp.PCell):
         half_angle = math.radians(half_degrees)
         waveguide_width = waveguide_type.wg_width
         waveguide_layer = waveguide_type.wg_layer
-        si_etch1_layer = TECH.WG.GRAT.C.WIRE.wg_layer
+        si_etch1_layer = TECH.WG.CHANNEL.C.WIRE.wg_layer
 
         content:List[fp.IPolygon] = []
         content.append(
@@ -113,3 +113,4 @@ if __name__ == "__main__":
     library += GratingCoupler()
 
     fp.export_gds(library, file=gds_file)
+    fp.plot(library)

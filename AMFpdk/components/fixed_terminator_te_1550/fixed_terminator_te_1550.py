@@ -13,7 +13,7 @@ class Fixed_Terminator_TE_1550(fp.PCell):
     port_names: fp.IPortOptions = fp.PortOptionsParam(count=1, default=["op_0"])
 
     def _default_waveguide_type(self):
-        return get_technology().WG.RIB.C.WIRE
+        return get_technology().WG.CHANNEL.C.WIRE
 
     def build(self) -> Tuple[fp.InstanceSet, fp.ElementSet, fp.PortSet]:
         insts, elems, ports = super().build()
@@ -35,3 +35,4 @@ if __name__ =="__main__":
     library += Fixed_Terminator_TE_1550()
 
     fp.export_gds(library, file=gds_file)
+    fp.plot(library)

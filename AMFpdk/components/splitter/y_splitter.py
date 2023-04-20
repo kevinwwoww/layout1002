@@ -14,7 +14,7 @@ class YSplitter(fp.PCell):
     out_degrees: float = fp.DegreeParam(default=90, doc="Angle at which the waveguide exit the splitter")
     center_waveguide_length: float = fp.PositiveFloatParam(default=2.0, doc="Length of the center waveguide")
     taper_length: float = fp.PositiveFloatParam(default=0.1, doc="Length of the tapered section")
-    waveguide_type: CoreWaveguideType = fp.WaveguideTypeParam(type=CoreWaveguideType)
+    waveguide_type: fp.IWaveguideType = fp.WaveguideTypeParam()
     port_names: fp.IPortOptions = fp.PortOptionsParam(count=3, default=("op_0", "op_1", "op_2"))
 
     def _default_waveguide_type(self):

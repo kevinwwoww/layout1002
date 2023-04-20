@@ -22,7 +22,7 @@ class SBend(fp.PCell):
             return 45
 
     def _default_waveguide_type(self):
-        return get_technology().WG.RIB.C.WIRE
+        return get_technology().WG.CHANNEL.C.WIRE
 
     def build(self) -> Tuple[fp.InstanceSet, fp.ElementSet, fp.PortSet]:
         insts, elems, ports = super().build()

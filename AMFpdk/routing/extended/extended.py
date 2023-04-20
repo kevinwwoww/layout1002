@@ -62,7 +62,7 @@ if __name__ == "__main__":
 
     from AMFpdk.components.mmi.mmi import MMI
 
-    library += Extended(device=MMI(waveguide_type=TECH.WG.RIB.C.WIRE), lengths={"op_0": 30, "*": 10})
+    library += Extended(device=MMI(waveguide_type=TECH.WG.CHANNEL.C.WIRE), lengths={"op_0": 30, "*": 10})
 
     fp.export_gds(library, file=gds_file)
     # fp.plot(library)

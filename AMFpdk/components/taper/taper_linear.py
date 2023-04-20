@@ -10,16 +10,16 @@ from AMFpdk.technology.interfaces import CoreWaveguideType
 class TaperLinear(fp.IWaveguideLike, fp.PCell):
 
     length: float = fp.PositiveFloatParam(default=10)
-    left_type: CoreWaveguideType = fp.WaveguideTypeParam(type=CoreWaveguideType)
-    right_type: CoreWaveguideType = fp.WaveguideTypeParam(type=CoreWaveguideType)
+    left_type: fp.IWaveguideType = fp.WaveguideTypeParam()
+    right_type: fp.IWaveguideType = fp.WaveguideTypeParam()
     anchor: fp.Anchor = fp.AnchorParam(default=fp.Anchor.CENTER)
     port_names = fp.IPortOption = fp.PortOptionsParam(count=2, default=["op_0","op_1"])
 
     def _default_left_type(self):
-        return get_technology().WG.SLAB.C.WIRE
+        return get_technology().WG.CHANNEL.C.WIRE
 
     def _default_right_type(self):
-        return get_technology().WG.SLAB.C.WIRE
+        return get_technology().WG.CHANNEL.C.WIRE
 
     @cached_property
     def raw_curve(self):
@@ -54,7 +54,8 @@ if __name__ == "__main__":
     TECH = get_technology()
 
     library += TaperLinear()
-    Sitaper = TECH.WG.SLAB.C.WIRE.updated(wg_design_width=0.2)
-    library += TaperLinear(name="s", length=15, left_type=TECH.WG.SLAB.C.WIRE, right_type=Sitaper)
+    # Sitaper = TECH.WG.CHANNEL.C.WIRE.updated(wg_design_width=0.2)
+    # library += TaperLinear(name="s", length=15, left_type=TECH.WG.CHANNEL.C.WIRE, right_type=Sitaper)
 
     fp.export_gds(library, file=gds_file)
+    fp.plot(library)

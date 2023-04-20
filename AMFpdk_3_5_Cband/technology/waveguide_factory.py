@@ -36,9 +36,12 @@ class CircularBendFactory(fpt.IBendWaveguideFactory):
                 bend = bend.v_mirrored()
 
         if bend is None:
-            bend = Bend(EndAngle=math.degrees(central_angle), Radius=radius_eff,
-                                waveguide_type=self.waveguide_type)
+            bend = Bend(EndAngle=math.degrees(central_angle), Radius=self.radius_eff,
+                        waveguide_type=self.waveguide_type)
+        # if central_angle < 0:
+        #     bend = bend.v_mirrored()
+
+        print(central_angle)
+        print(self.radius_eff)
 
         return bend, radius_eff, ("op_0", "op_1")
-
-

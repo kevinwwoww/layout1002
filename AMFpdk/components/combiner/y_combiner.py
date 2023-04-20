@@ -15,7 +15,7 @@ class YCombiner(fp.PCell):
     port_names: fp.IPortOptions = fp.PortOptionsParam(count=3, default=("op_1", "op_2", "op_3"))
 
     def _default_waveguide_type(self):
-        return get_technology().WG.RIB.C.WIRE
+        return get_technology().WG.CHANNEL.C.WIRE
 
     def build(self) -> Tuple[fp.InstanceSet, fp.ElementSet, fp.PortSet]:
         insts, elems, ports = super().build()
@@ -44,3 +44,4 @@ if __name__ =="__main__":
     library += YCombiner()
 
     fp.export_gds(library,file=gds_file)
+    fp.plot(library)

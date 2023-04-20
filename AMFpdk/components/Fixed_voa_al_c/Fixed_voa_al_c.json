@@ -23,7 +23,7 @@
             "degrees": 180
           },
           "waveguide_type": {
-            "override": "TECH.WG.RIB.C.WIRE",
+            "override": "TECH.WG.CHANNEL.C.WIRE",
             "values": {
               "wg_layout_width": 0.45
             }
@@ -39,7 +39,7 @@
             "degrees": 0
           },
           "waveguide_type": {
-            "override": "TECH.WG.RIB.C.WIRE",
+            "override": "TECH.WG.CHANNEL.C.WIRE",
             "values": {
               "wg_layout_width": 0.45
             }

@@ -19,7 +19,7 @@ class Straight(fp.IWaveguideLike, fp.PCell):
     Examples:
     ```python
     TECH = get_technology()
-        # straight = Straight(name="s", length=10, waveguide_type=TECH.WG.RIB.C.WIRE)
+        # straight = Straight(name="s", length=10, waveguide_type=TECH.WG.CHANNEL.C.WIRE)
     fp.plot(straight)
     ```
     ![Straight](images/straight.png)
@@ -72,7 +72,7 @@ if __name__ == "__main__":
     # =============================================================
     # fmt: off
 
-    library += Straight(waveguide_type=TECH.WG.RIB.C.WIRE)
+    library += Straight(waveguide_type=TECH.WG.CHANNEL.C.WIRE)
 
     # fmt: on
     # =============================================================

@@ -437,14 +437,14 @@ if __name__ == "__main__":
         return gc, "op_0"
 
 
-    from AMFpdk.technology.waveguide_factory import EulerBendFactory
+    from AMFpdk.technology.waveguide_factory import CircularBendFactory
 
 
     def bend_factories(waveguide_type: fp.IWaveguideType):
-        if waveguide_type == TECH.WG.RIB.C.WIRE:
-            return EulerBendFactory(radius_min=35, l_max=35, waveguide_type=waveguide_type)
+        if waveguide_type == TECH.WG.CHANNEL.C.WIRE:
+            return CircularBendFactory(radius_eff=35, waveguide_type=waveguide_type)
         elif waveguide_type == TECH.WG.SLAB.C.WIRE:
-            return EulerBendFactory(radius_min=55, l_max=35, waveguide_type=waveguide_type)
+            return CircularBendFactory(radius_eff=55, waveguide_type=waveguide_type)
         return waveguide_type.bend_factory
 
 
@@ -454,8 +454,8 @@ if __name__ == "__main__":
 
 
     def get_ring_resonator_with_terminator(ring_radius: float):
-        terminator = Fixed_Terminator_TE_1550(waveguide_type=TECH.WG.RIB.C.WIRE)
-        ring_resonator = RingResonator(ring_radius=ring_radius, ring_type=TECH.WG.RIB.C.WIRE)
+        terminator = Fixed_Terminator_TE_1550(waveguide_type=TECH.WG.CHANNEL.C.WIRE)
+        ring_resonator = RingResonator(ring_radius=ring_radius, ring_type=TECH.WG.CHANNEL.C.WIRE)
         return Extended(
             device=fp.Connected(
                 joints=[ring_resonator["op_2"] <= terminator["op_0"]],
@@ -468,12 +468,12 @@ if __name__ == "__main__":
     from AMFpdk.components.ring_filter.ring_filter import RingFilter
 
     blocks = [
-        Alignment(waveguide_type=TECH.WG.RIB.C.WIRE),
+        Alignment(waveguide_type=TECH.WG.CHANNEL.C.WIRE),
         Title("Test", layer=TECH.LAYER.LBL),
         Block(
             RingFilter(
                 ring_radius=25,
-                waveguide_type=TECH.WG.RIB.C.WIRE,
+                waveguide_type=TECH.WG.CHANNEL.C.WIRE,
             )
         ),
         Block(get_ring_resonator_with_terminator(25)),
@@ -482,7 +482,7 @@ if __name__ == "__main__":
 
 
     # blocks = [
-    #     Alignment(waveguide_type=TECH.WG.RIB.C.WIRE),
+    #     Alignment(waveguide_type=TECH.WG.CHANNEL.C.WIRE),
     #     Title("TEST", layer=TECH.LAYER.LBL),
     #     Block(get_ring_resonator_with_terminator(25)),
     #     Block(get_ring_resonator_with_terminator(75), repeat=3)

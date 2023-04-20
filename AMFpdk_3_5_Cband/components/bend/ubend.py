@@ -1,6 +1,7 @@
 from dataclasses import dataclass
 from functools import cached_property
 from typing import Tuple
+import math
 
 from fnpcell import all as fp
 from fnpcell.interfaces import angle_between, distance_between
@@ -21,13 +22,14 @@ class Ubend(fp.IWaveguideLike, fp.PCell):
     # straight: fp.IDevice = fp.DeviceParam(type=Straight, port_count=2, required=False)
 
     def _default_waveguide_type(self):
-        return get_technology().WG.CHANNEL.C.WIRE
+        return get_technology().WG.CHANNEL.C.WIRE.updated(wg_design_width=self.Width)
 
     def _default_bend(self):
         return Bend90(
             name="bend",
             Radius=self.Radius,
-            Width=self.Width
+            Width=self.Width,
+            waveguide_type=self.waveguide_type
         )
 
     def build(self):
@@ -65,7 +67,7 @@ if __name__ == "__main__":
 
     TECH = get_technology()
 
-    library += Ubend()
+    library += Ubend(Width=3, sLength=3)
 
     fp.export_gds(library, file=gds_file)
     fp.plot(library)
