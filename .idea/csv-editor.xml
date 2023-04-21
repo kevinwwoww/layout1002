@@ -87,6 +87,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\AMFpdk_3_5_Oband\technology\generated\wg.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\CT_Al_pdk\technology\generated\wg.csv">
           <value>
             <Attribute>
