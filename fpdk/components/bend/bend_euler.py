@@ -118,62 +118,39 @@ class BendEuler90(BendEuler):
 
 
 @dataclass(eq=False)
-class BendEuler90_FWG_C_WIRE(BendEuler90, locked=True):
-    l_max: Optional[float] = fp.PositiveFloatParam(default=5, doc="Bend Lmax")
-    radius_min: float = fp.PositiveFloatParam(default=3.225, doc="Bend radius_min")
-    waveguide_type: CoreCladdingWaveguideType = fp.WaveguideTypeParam(type=CoreCladdingWaveguideType, doc="Waveguide parameters")
-    slab_square: bool = fp.BooleanParam(required=False, default=True, doc="whether draw a square clad")
-
-    def _default_waveguide_type(self):
-        return get_technology().WG.FWG.C.WIRE
-
-    @fp.cache()
-    def sim_model(self, env: fp.ISimEnv):
-        return fp.sim.ExternalFileModel(Path("BendCircular90_radius=10").with_suffix(".dat"))
-
-
-@dataclass(eq=False)
-class BendEuler90_FWG_C_EXPANDED(BendEuler90, locked=True):
-
-    l_max: Optional[float] = fp.PositiveFloatParam(default=10, doc="Bend Lmax")
-    radius_min: float = fp.PositiveFloatParam(default=3.4, doc="Bend radius_min")
-    waveguide_type: CoreCladdingWaveguideType = fp.WaveguideTypeParam(type=CoreCladdingWaveguideType, doc="Waveguide parameters")
-    slab_square: bool = fp.BooleanParam(required=False, default=True, doc="whether draw a square clad")
-
-    def _default_waveguide_type(self):
-        return get_technology().WG.FWG.C.EXPANDED
-
-    @fp.cache()
-    def sim_model(self, env: fp.ISimEnv):
-        return fp.sim.ExternalFileModel(Path("BendCircular90_radius=10").with_suffix(".dat"))
-
-
-@dataclass(eq=False)
-class BendEuler_FWG_C_WIRE(BendEuler, locked=True):
+class BendEuler_FWG_C_WIRE(BendEuler90, locked=True):
+    radius_min: float = fp.PositiveFloatParam(default=5, doc="Bend radius")
+    waveguide_type: fp.IWaveguideType = fp.WaveguideTypeParam()
 
     def _default_waveguide_type(self):
         return get_technology().WG.FWG.C.WIRE
 
 
 @dataclass(eq=False)
-class BendEuler_FWG_C_EXPANDED(BendEuler, locked=True):
-
+class BendEuler_FWG_C_EXPANDED(BendEuler90, locked=True):
+    radius_min: float = fp.PositiveFloatParam(default=6, doc="Bend radius")
+    waveguide_type: fp.IWaveguideType = fp.WaveguideTypeParam()
     def _default_waveguide_type(self):
         return get_technology().WG.FWG.C.EXPANDED
 
 
 @dataclass(eq=False)
-class BendEuler_SWG_C_WIRE(BendEuler, locked=True):
+class BendEuler_SWG_C_WIRE(BendEuler90, locked=True):
+    radius_min: float = fp.PositiveFloatParam(default=10, doc="Bend radius")
+    waveguide_type: fp.IWaveguideType = fp.WaveguideTypeParam()
 
     def _default_waveguide_type(self):
         return get_technology().WG.SWG.C.WIRE
 
 
 @dataclass(eq=False)
-class BendEuler_SWG_C_EXPANDED(BendEuler, locked=True):
-
+class BendEuler_SWG_C_EXPANDED(BendEuler90, locked=True):
+    radius_min: float = fp.PositiveFloatParam(default=12, doc="Bend radius")
+    waveguide_type: fp.IWaveguideType = fp.WaveguideTypeParam()
     def _default_waveguide_type(self):
         return get_technology().WG.SWG.C.EXPANDED
+
+
 if __name__ == "__main__":
     from fpdk.util.path import local_output_file
 
@@ -184,15 +161,12 @@ if __name__ == "__main__":
     # =======================================================================
     # fmt: off
 
-    library += BendEuler()
-    # library += BendEuler90()
-    # library += BendEuler(name="e60", radius_min=10, degrees=60, waveguide_type=TECH.WG.FWG.C.WIRE)
-    # library += BendEuler(name="e90", radius_min=10, degrees=90, waveguide_type=TECH.WG.FWG.C.WIRE)
-    # library += BendEuler(name="e_60", radius_min=10, degrees=-60, waveguide_type=TECH.WG.FWG.C.WIRE)
-    # library += BendEuler(name="e_90", radius_min=10, degrees=-90, waveguide_type=TECH.WG.FWG.C.WIRE)
-    # library += BendEuler90(name="e90c", p=0.5, radius_min=10, slab_square=True, waveguide_type=TECH.WG.FWG.C.WIRE)
+    library += BendEuler_FWG_C_WIRE()
+    library += BendEuler_FWG_C_EXPANDED()
+    library += BendEuler_SWG_C_WIRE()
+    library += BendEuler_SWG_C_EXPANDED()
 
     # fmt: on
     # =============================================================
     fp.export_gds(library, file=gds_file)
-    fp.plot(library)
+    # fp.plot(library)

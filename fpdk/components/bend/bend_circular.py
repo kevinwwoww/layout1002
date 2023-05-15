@@ -53,7 +53,7 @@ class BendCircular(fp.IWaveguideLike, fp.PCell):
 @dataclass(eq=False)
 class BendCircular90(BendCircular):
     degrees: float = fp.DegreeParam(default=90, locked=True)
-    waveguide_type: fp.IWaveguideType = fp.WaveguideTypeParam(locked=True)
+    waveguide_type: fp.IWaveguideType = fp.WaveguideTypeParam()
 
     @fp.cache()
     def sim_model(self, env: fp.ISimEnv):
@@ -61,49 +61,33 @@ class BendCircular90(BendCircular):
 
 
 @dataclass(eq=False)
-class BendCircular90_FWG_C_WIRE(BendCircular90, locked=True):
-    radius: float = fp.PositiveFloatParam(default=3.225, doc="Bend radius")
-
-    @fp.cache()
-    def sim_model(self, env: fp.ISimEnv):
-        return fp.sim.ExternalFileModel(Path("BendCircular90_radius=10").with_suffix(".dat"))
-
-
-@dataclass(eq=False)
-class BendCircular90_FWG_C_EXPANDED(BendCircular, locked=True):
-    radius: float = fp.PositiveFloatParam(default=3.4, doc="Bend radius")
+class BendCircular_FWG_C_WIRE(BendCircular90, locked=True):
+    radius: float = fp.PositiveFloatParam(default=5, doc="Bend radius")
     waveguide_type: fp.IWaveguideType = fp.WaveguideTypeParam()
-
-    def _default_waveguide_type(self):
-        return get_technology().WG.FWG.C.EXPANDED
-
-    @fp.cache()
-    def sim_model(self, env: fp.ISimEnv):
-
-        file_path = Path("BendCircular90_radius=10").with_suffix(".dat")
-
-        return fp.sim.ExternalFileModel(file_path)
-
-@dataclass(eq=False)
-class BendCircular_FWG_C_WIRE(BendCircular, locked=True):
 
     def _default_waveguide_type(self):
         return get_technology().WG.FWG.C.WIRE
 
 @dataclass(eq=False)
-class BendCircular_FWG_C_EXPANDED(BendCircular):
+class BendCircular_FWG_C_EXPANDED(BendCircular90, locked=True):
+    radius: float = fp.PositiveFloatParam(default=6, doc="Bend radius")
+    waveguide_type: fp.IWaveguideType = fp.WaveguideTypeParam()
 
     def _default_waveguide_type(self):
         return get_technology().WG.FWG.C.EXPANDED
 
 @dataclass(eq=False)
-class BendCircular_SWG_C_WIRE(BendCircular):
+class BendCircular_SWG_C_WIRE(BendCircular90, locked=True):
+    radius: float = fp.PositiveFloatParam(default=10, doc="Bend radius")
+    waveguide_type: fp.IWaveguideType = fp.WaveguideTypeParam()
 
     def _default_waveguide_type(self):
         return get_technology().WG.SWG.C.WIRE
 
 @dataclass(eq=False)
-class BendCircular_SWG_C_EXPANDED(BendCircular):
+class BendCircular_SWG_C_EXPANDED(BendCircular90, locked=True):
+    radius: float = fp.PositiveFloatParam(default=12, doc="Bend radius")
+    waveguide_type: fp.IWaveguideType = fp.WaveguideTypeParam()
 
     def _default_waveguide_type(self):
         return get_technology().WG.SWG.C.EXPANDED
@@ -118,15 +102,13 @@ if __name__ == "__main__":
     # =======================================================================
     # fmt: off
 
-    # library += BendCircular(name="s", radius=15, waveguide_type=TECH.WG.FWG.C.WIRE)
-    # library += BendCircular90()
-    # library += BendCircular(name="d", radius=10, waveguide_type=TECH.WG.FWG.C.WIRE).translated(0, 15)
-    # library += BendCircular()
     library += BendCircular_FWG_C_WIRE()
-    # print(BendCircular().cell.polygon_set(layer=TECH.LAYER.FWG_COR,union=False))
+    library += BendCircular_FWG_C_EXPANDED()
+    library += BendCircular_SWG_C_WIRE()
+    library += BendCircular_SWG_C_EXPANDED()
 
 
     # fmt: on
     # =============================================================
     fp.export_gds(library, file=gds_file)
-    fp.plot(library)
+    # fp.plot(library)

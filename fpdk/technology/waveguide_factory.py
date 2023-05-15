@@ -20,7 +20,7 @@ class CircularBendFactory(fpt.IBendWaveguideFactory):
     waveguide_type: fpt.IWaveguideType = field(repr=False)
 
     def __call__(self, central_angle: float):
-        from fpdk.components.bend.bend_circular import BendCircular, BendCircular90_FWG_C_WIRE, BendCircular90_FWG_C_EXPANDED
+        from fpdk.components.bend.bend_circular import BendCircular
         from fpdk.technology import get_technology
 
         TECH = get_technology()
