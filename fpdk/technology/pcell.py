@@ -7,7 +7,11 @@ from fnpcell import all as fp
 
 
 @dataclass(eq=False)
-class PCell(fp.PCell):
+class PCellBase(fp.PCell):
+    
+    name: str = fp.NameParam(prefix="", hash=False, compare=False)
+    
+
     @fp.cache()
     def sim_model(self, env: fp.ISimEnv) -> Optional[fp.ISimModel]:
         pcell_class = type(self)
@@ -20,3 +24,5 @@ class PCell(fp.PCell):
 
             warn(f"Construct external file model error: {e}")
             return None
+        
+    

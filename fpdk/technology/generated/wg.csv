@@ -1,0 +1,13 @@
+NAME,CONFIGURATION
+FWG.C.EXPANDED,"core_layout_width=0.9, cladding_layout_width=4.8, core_design_width=0.8, cladding_design_width=4.8, port_names=('op_0', 'op_1')"
+FWG.C.EXPANDED.BEND_CIRCULAR,radius_eff=3.4
+FWG.C.EXPANDED.BEND_EULER,"radius_min=3.4, l_max=10"
+FWG.C.WIRE,"core_layout_width=0.55, cladding_layout_width=4.45, core_design_width=0.45, cladding_design_width=4.45, port_names=('op_0', 'op_1')"
+FWG.C.WIRE.BEND_CIRCULAR,radius_eff=3.225
+FWG.C.WIRE.BEND_EULER,"radius_min=3.225, l_max=5"
+SWG.C.EXPANDED,"core_layout_width=3.15, cladding_layout_width=13.0, core_design_width=3.0, cladding_design_width=13.0, port_names=('op_0', 'op_1')"
+SWG.C.EXPANDED.BEND_CIRCULAR,radius_eff=7.5
+SWG.C.EXPANDED.BEND_EULER,"radius_min=7.5, l_max=25"
+SWG.C.WIRE,"core_layout_width=1.15, cladding_layout_width=11.0, core_design_width=1.0, cladding_design_width=11.0, port_names=('op_0', 'op_1')"
+SWG.C.WIRE.BEND_CIRCULAR,radius_eff=6.5
+SWG.C.WIRE.BEND_EULER,"radius_min=6.5, l_max=15"
