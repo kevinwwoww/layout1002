@@ -2,8 +2,8 @@ from fnpcell import all as fp
 
 
 class PIN:
-    LENGTH = 0.5
-    OFFSET = -0.25
+    LENGTH = 0.3
+    OFFSET = -0.15
 
     @staticmethod
     def ICON_LAYER(layer: fp.IMetalLineType):
@@ -19,8 +19,8 @@ class PIN:
 
 
 class PORT:
-    LENGTH = 0.5
-    OFFSET = -0.25
+    LENGTH = 0.3
+    OFFSET = -0.15
 
     @staticmethod
     def ICON_LAYER(waveguide_type: fp.IWaveguideType):

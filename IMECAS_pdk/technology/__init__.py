@@ -3,7 +3,6 @@ from fnpcell import console
 from fnpcell.pdk.technology.all import register_technology
 
 from .tech import TECH as IMECAS_pdk_TECH
-from .pcell import PCell as PCell
 from .wg import WG  # type: ignore
 
 console.info(f"IMECAS_pdk version: {IMECAS_pdk.__version__}")

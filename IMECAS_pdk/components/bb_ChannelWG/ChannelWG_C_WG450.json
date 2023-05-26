@@ -5,7 +5,7 @@
       "10/3": "TECH.LAYER.FECLD",
       "10/4": "TECH.LAYER.FETCH",
       "120/0": "TECH.LAYER.BB",
-      "1002/0": "TECH.LAYER.PINREC"
+      "1002/0": "_IGNORE_"
     },
     "ports": [
       {

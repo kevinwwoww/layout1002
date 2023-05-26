@@ -20,3 +20,4 @@ if __name__ == "__main__":
     library += ChannelWG_O_WG380()
 
     fp.export_gds(library, file=gds_file)
+    fp.plot(library, title="ChannelWG_O_WG380")

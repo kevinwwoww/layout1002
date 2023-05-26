@@ -21,3 +21,4 @@ if __name__ == "__main__":
     library += RIB_C_TE_SEFE_450_1000()
 
     fp.export_gds(library, file=gds_file)
+    fp.plot(library, title="RIB_C_TE_SEFE_450_1000")

@@ -2,6 +2,8 @@ from dataclasses import dataclass
 from fnpcell import all as fp
 from IMECAS_pdk import all as pdk
 from IMECAS_pdk.technology import get_technology
+import IMECAS_pdk
+from IMECAS_pdk.technology.font.font_std_vented import FONT as font_gds
 
 
 
@@ -28,8 +30,8 @@ class MMItest(fp.PCell):
         mmi_4 = mmi.translated(400, -150)
 
         device = fp.Linked(
-            link_type=TECH.WG.Channel.O.WIRE,
-            bend_factory=TECH.WG.Channel.O.WIRE.BEND,
+            link_type=TECH.WG.Rib.O.WIRE,
+            bend_factory=TECH.WG.Rib.O.WIRE.BEND,
             links=[
                 left_gc["out_0"] >> mmi_1["input"],
                 right_gc_1["out_0"] >> mmi_1["output2"],
@@ -43,6 +45,10 @@ class MMItest(fp.PCell):
             ],
             ports=[],
         )
+        logo = fp.el.Label(content="LATITUDE DESIGN AUTOMATION", layer=TECH.LAYER.DOC, at=(700-442.857, -240), font_size=20, font=font_gds)
+        mmi = fp.el.Label(content="MMI1X2_O_WG380", layer=TECH.LAYER.DOC, at=(77, -130), font_size=15, font=font_gds)
+        tran = fp.el.Label(content="TR380_RIB580", layer=TECH.LAYER.DOC, at=(77, -160), font_size=15, font=font_gds)
+        elems += logo, mmi, tran
 
         insts += device
 
@@ -66,4 +72,4 @@ if __name__ == "__main__":
     # =============================================================
     fp.export_gds(library, file=gds_file)
 
-    fp.plot(library)
+    # fp.plot(library)

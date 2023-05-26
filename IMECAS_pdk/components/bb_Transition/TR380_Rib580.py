@@ -3,11 +3,17 @@ from pathlib import Path
 from fnpcell import all as fp
 from IMECAS_pdk.technology import get_technology
 from IMECAS_pdk.util.json_cell import JsonCell
+from functools import cached_property
 
 
 @dataclass(eq=False)
-class TR380_Rib580(JsonCell, locked=True):
-    pass
+class TR380_Rib580(JsonCell, fp.ICurvedCellRef, locked=True):
+
+
+    @cached_property
+    def raw_curve(self):
+        IN, OUT = self.cell.ports
+        return fp.g.LineBetween(IN.position, OUT.position)
 
 
 if __name__ == "__main__":
@@ -21,3 +27,4 @@ if __name__ == "__main__":
     library += TR380_Rib580()
 
     fp.export_gds(library, file=gds_file)
+    fp.plot(library, title="TR380_Rib580")

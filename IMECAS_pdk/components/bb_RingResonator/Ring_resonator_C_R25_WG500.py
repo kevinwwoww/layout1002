@@ -21,3 +21,4 @@ if __name__ == "__main__":
     library += Ring_resonator_C_R25_WG500()
 
     fp.export_gds(library, file=gds_file)
+    fp.plot(library, title="Ring_resonator_C_R25_WG500")

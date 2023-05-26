@@ -21,3 +21,4 @@ if __name__ == "__main__":
     library += Ring_resonator_O_R15_WG380()
 
     fp.export_gds(library, file=gds_file)
+    fp.plot(library, title="Ring_resonator_O_R15_WG380")

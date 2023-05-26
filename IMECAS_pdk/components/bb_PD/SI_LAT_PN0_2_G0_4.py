@@ -21,3 +21,4 @@ if __name__ == "__main__":
     library += SI_LAT_PN0_2_G0_4()
 
     fp.export_gds(library, file=gds_file)
+    fp.plot(library)

@@ -64,7 +64,7 @@ class DISPLAY():
         stroke=LayerStroke(color=NamedColor.GRAY11, width=1)), LAYER.MARK: LayerStyle(
         fill=LayerFill(color=NamedColor.CYAN4, pattern=FillPattern.DIAGONAL),
         stroke=LayerStroke(color=NamedColor.CYAN4, width=1)), LAYER.BB: LayerStyle(
-        fill=LayerFill(color=NamedColor.LINEN, pattern=FillPattern.GRID),
+        fill=LayerFill(color=NamedColor.LINEN, pattern=FillPattern.BACK_DIAGONAL),
         stroke=LayerStroke(color=NamedColor.LINEN, width=1)), LAYER.DOC: LayerStyle(
         fill=LayerFill(color=NamedColor.LIGHTSEAGREEN, pattern=FillPattern.DIAGONAL),
         stroke=LayerStroke(color=NamedColor.LIGHTSEAGREEN, width=1)), LAYER.PINREC: LayerStyle(

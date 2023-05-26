@@ -3,7 +3,6 @@ from IMECAS_pdk.technology.auto_transition import AUTO_TRANSITION
 from IMECAS_pdk.technology.bands import BAND
 from IMECAS_pdk.technology.device import DEVICE
 from IMECAS_pdk.technology.display import DISPLAY
-from IMECAS_pdk.technology.fitting_function import FITTING_FUNCTION
 from IMECAS_pdk.technology.gdsii import GDSII
 from IMECAS_pdk.technology.label import LABEL
 from IMECAS_pdk.technology.layers import LAYER, PROCESS, PURPOSE
@@ -31,5 +30,5 @@ class TECH:
     DISPLAY = DISPLAY
     AUTO_TRANSITION = AUTO_TRANSITION
     LINKING_POLICY = LINKING_POLICY
-    FITTING_FUNCTION = FITTING_FUNCTION
+
 

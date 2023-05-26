@@ -3,8 +3,8 @@
     "layers": {
       "10/4": "TECH.LAYER.FETCH",
       "120/0": "TECH.LAYER.BB",
-      "1000/0": "TECH.LAYER.DOC",
-      "1002/0": "TECH.LAYER.PINREC"
+      "1000/0": "_IGNORE_",
+      "1002/0": "_IGNORE_"
     },
     "ports": [
       {
@@ -26,7 +26,7 @@
             {
           "name": "out1",
           "position": [
-            664.665,
+            664.655,
             282.225
           ],
           "orientation": {
@@ -42,7 +42,7 @@
                   {
           "name": "out2",
           "position": [
-            664.665,
+            664.655,
             242.225
           ],
           "orientation": {
@@ -58,7 +58,7 @@
                   {
           "name": "out3",
           "position": [
-            664.665,
+            664.655,
             202.225
           ],
           "orientation": {
@@ -74,7 +74,7 @@
                   {
           "name": "out4",
           "position": [
-            664.665,
+            664.655,
             162.225
           ],
           "orientation": {
@@ -90,7 +90,7 @@
                   {
           "name": "out5",
           "position": [
-            664.665,
+            664.655,
             122.225
           ],
           "orientation": {
@@ -106,7 +106,7 @@
                   {
           "name": "out6",
           "position": [
-            664.665,
+            664.655,
             82.225
           ],
           "orientation": {
@@ -122,7 +122,7 @@
                   {
           "name": "out7",
           "position": [
-            664.665,
+            664.655,
             42.225
           ],
           "orientation": {
@@ -138,7 +138,7 @@
                   {
           "name": "out8",
           "position": [
-            664.665,
+            664.655,
             2.225
           ],
           "orientation": {

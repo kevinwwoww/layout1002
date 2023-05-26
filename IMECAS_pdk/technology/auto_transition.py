@@ -5,7 +5,7 @@ from IMECAS_pdk.technology.wg import WG
 
 
 def _c_channel2rib(end_types: Tuple[fpt.IWaveguideType, fpt.IWaveguideType]):
-    from IMECAS_pdk.components.bb_Transition import TR450_rib650 as TR450_rib650
+    from IMECAS_pdk.components.bb_Transition.TR450_rib650 import TR450_rib650
 
     a = end_types[0]
     b = end_types[1]
@@ -16,8 +16,7 @@ def _c_channel2rib(end_types: Tuple[fpt.IWaveguideType, fpt.IWaveguideType]):
 
 
 def _o_channel2rib(end_types: Tuple[fpt.IWaveguideType, fpt.IWaveguideType]):
-    from IMECAS_pdk.components.bb_Transition import TR380_Rib580 as TR380_Rib580
-
+    from IMECAS_pdk.components.bb_Transition.TR380_Rib580 import TR380_Rib580
     a = end_types[0]
     b = end_types[1]
     assert isinstance(a, WG.Channel.O)

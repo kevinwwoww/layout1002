@@ -3,7 +3,8 @@
     "layers": {
       "10/4": "TECH.LAYER.FETCH",
       "120/0": "TECH.LAYER.BB",
-      "1002/0": "TECH.LAYER.PINREC"
+      "1002/0": "_IGNORE_",
+      "1000/0": "TECH.LAYER.DOC"
     },
     "ports": [
       {

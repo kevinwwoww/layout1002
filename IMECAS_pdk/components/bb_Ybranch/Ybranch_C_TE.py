@@ -21,3 +21,4 @@ if __name__ == "__main__":
     library += Ybranch_C_TE()
 
     fp.export_gds(library, file=gds_file)
+    fp.plot(library, title="Ybranch_C_TE")

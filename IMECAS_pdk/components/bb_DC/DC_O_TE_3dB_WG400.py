@@ -21,3 +21,4 @@ if __name__ == "__main__":
     library += DC_O_TE_3dB_WG400()
 
     fp.export_gds(library, file=gds_file)
+    fp.plot(library, title="DC_O_TE_3dB_WG400")

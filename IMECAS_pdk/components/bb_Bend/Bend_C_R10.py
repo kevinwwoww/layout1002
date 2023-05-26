@@ -3,10 +3,17 @@ from pathlib import Path
 from fnpcell import all as fp
 from IMECAS_pdk.technology import get_technology
 from IMECAS_pdk.util.json_cell import JsonCell
+from functools import cached_property
 
 @dataclass(eq=False)
 class Bend_C_R10(JsonCell, locked=True):
-    pass
+
+    @cached_property
+    def raw_curve(self):
+        curve = fp.g.EllipticalArc(radius=100, final_degrees=90)
+        new_curve = curve.h_mirrored().translated(100+10.75, 0)
+
+        return new_curve
 
 
 if __name__ == "__main__":
@@ -20,3 +27,4 @@ if __name__ == "__main__":
     library += Bend_C_R10()
 
     fp.export_gds(library, file=gds_file)
+    fp.plot(library, title="Bend_C_R10")

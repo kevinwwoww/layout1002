@@ -425,6 +425,14 @@ class WG:
                     cladding_design_width: float = RIB_O_CLD_WIDTH
                     trench_design_width: float = RIB_O_TCH_WIDTH
 
+                    @fpt.const_property
+                    def bend_factory(self):
+                        return self.BEND
+
+                    @fpt.const_property
+                    def BEND(self):
+                        return BendFactory(radius_eff=10, waveguide_type=self)
+
                 return WIRE()
 
             @fpt.staticconst

@@ -20,3 +20,4 @@ if __name__ == "__main__":
     library += Bend_O_R10()
 
     fp.export_gds(library, file=gds_file)
+    fp.plot(library, title="Bend_O_R10")

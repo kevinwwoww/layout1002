@@ -21,3 +21,4 @@ if __name__ == "__main__":
     library += MMI1X2_O_WG380()
 
     fp.export_gds(library, file=gds_file)
+    fp.plot(library, title="MMI1X2_O_WG380")

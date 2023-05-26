@@ -19,4 +19,6 @@ if __name__ == "__main__":
     library += JsonCell(stem_name="AWG200G_C_TE_8ch_WG450", root_folder=Path(__file__).parent)
     library += AWG200G_C_TE_8ch_WG450()
 
+
     fp.export_gds(library, file=gds_file)
+    fp.plot(library, title="AWG200G_C_TE_8ch_WG450")

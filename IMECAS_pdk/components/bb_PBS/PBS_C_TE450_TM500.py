@@ -21,3 +21,4 @@ if __name__ == "__main__":
     library += PBS_C_TE450_TM500()
 
     fp.export_gds(library, file=gds_file)
+    fp.plot(library, title="PBS_C_TE450_TM500")

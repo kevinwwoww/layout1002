@@ -21,3 +21,4 @@ if __name__ == "__main__":
     library += FGC_O_TM_WG380()
 
     fp.export_gds(library, file=gds_file)
+    fp.plot(library, title="FGC_O_TM_WG380")
