@@ -29,10 +29,10 @@ class demux_1(fp.PCell):
 
         print(delta_length)
 
-        DC_050 = pdk.DC_050()
-        DC_025 = pdk.DC_025()
-        DC_013 = pdk.DC_013()
-        DC_012 = pdk.DC_012()
+        DC_050 = pdk.DirectionalCouplerBend(coupler_spacing=1.1)
+        DC_025 = pdk.DirectionalCouplerBend(coupler_spacing=1.0)
+        DC_013 = pdk.DirectionalCouplerBend(coupler_spacing=0.9)
+        DC_012 = pdk.DirectionalCouplerBend(coupler_spacing=0.8)
 
         DC1 = DC_050.translated(-100, 0)
         insts += DC1
@@ -117,9 +117,9 @@ if __name__ == "__main__":
     # Plot a figure of the circuit
     fp.plot(device)
 
-    ###############################
-    ### Start post-simulation #####
-    ###############################
+    ##############################
+    ## Start post-simulation #####
+    ##############################
     import sflow as sf
     import matplotlib.pyplot as plt
     import gpdk.components.all
@@ -128,7 +128,7 @@ if __name__ == "__main__":
 
     # Define the environment of simulation. Note that "wl_start", "wl_end", and "points_num" are necessary
     # You can also define some custom parameters, such as "T" or others
-    env = dict(wl_start=1.26, wl_end=1.34, points_num=101, T=300)
+    env = dict(wl_start=1.53, wl_end=1.565, points_num=101, T=300)
     # Define the path of the netlist file
     spc_filename = Path(__file__).parent / "local" / Path(__file__).with_suffix(".spc").name
     # Export the netlist file
@@ -139,7 +139,7 @@ if __name__ == "__main__":
         output_ports=["out1", "out2"],  # Define the ports which optical signal output
         env=env,  # Define the environment
         netlist_file=spc_filename,  # Define the netlist file
-        is_print_netlist=False  # Defines whether to print a simplified netlist information
+        # is_print_netlist=False  # Defines whether to print a simplified netlist information
     )
     # Get the data of each ports
     out1 = sim_result["out1"]

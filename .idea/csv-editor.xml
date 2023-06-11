@@ -38,77 +38,7 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="\AMFpdk\technology\generated_AMF\wg.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\AMFpdk\technology\generated_AMF\wg_AMF.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\AMFpdk\technology\layers.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\AMFpdk_3_5_Cband\technology\generated\wg.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\AMFpdk_3_5_Cband\technology\layers.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\AMFpdk_3_5_Cband_0420\technology\generated\wg.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\AMFpdk_3_5_Cband_0420\technology\layers.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\AMFpdk_3_5_Oband\technology\generated\wg.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\CT_Al_pdk\technology\generated\wg.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\CT_Al_pdk\technology\layers.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\CT_Cu_pdk\technology\layers.csv">
+        <entry key="\CT_pCu_pdk\technology\layers.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
@@ -116,6 +46,13 @@
           </value>
         </entry>
         <entry key="\IMECAS_SiN_pdk\technology\generated\wg.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\IMECAS_SiN_pdk\technology\layers.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
@@ -144,6 +81,48 @@
           </value>
         </entry>
         <entry key="\IMECAS_pdk\technology\layers.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\fpdk\fpdk\fpdk\technology\generated\layers.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\fpdk\fpdk\fpdk\technology\generated\wg.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\fpdk\fpdk\fpdk\technology\layers.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\gpdk_for_opa\technology\generated\layers.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\gpdk_for_opa\technology\generated\wg.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\gpdk_for_opa\technology\layers.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />

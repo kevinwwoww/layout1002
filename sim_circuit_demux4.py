@@ -204,26 +204,27 @@ if __name__ == "__main__":
     import matplotlib.pyplot as plt
     #
     components = gpdk.components.all
-    #
-    # env = sf.PsimEnvironment(wl_start=1.26, wl_end=1.36, points_num=100, source_power=0, input_ports=["p_0"],
-    #                          output_ports=["p_1", "p_2", "p_3", "p_4", "p_5", "p_6", "p_7", "p_8"])
-    # fp.export_spc(device, file=spc_filename, components=components, sim_env=fp.sim.Env(wavelength=env.wl_range))
-    #
-    # sim_result = sf.run_sim(spc_filename, env, is_print_netlist=True)
-
-    env = dict(wl_start=1.26, wl_end=1.34, points_num=101, T=300)
-    # Define the path of the netlist file
     spc_filename = Path(__file__).parent / "local" / Path(__file__).with_suffix(".spc").name
-    # Export the netlist file
-    fp.export_spc(device, file=spc_filename, components=components, sim_env=fp.sim.Env(**env))
-    # Run simulation
-    sim_result = sf.run_sim(
-        input_ports=["p_0"],  # Define the port which optical signal input
-        output_ports=["p_1", "p_2", "p_3", "p_4", "p_5", "p_6", "p_7", "p_8"],  # Define the ports which optical signal output
-        env=env,  # Define the environment
-        netlist_file=spc_filename,  # Define the netlist file
-        is_print_netlist=False  # Defines whether to print a simplified netlist information
-    )
+
+    env = sf.PsimEnvironment(wl_start=1.26, wl_end=1.36, points_num=100, source_power=0, input_ports=["p_0"],
+                             output_ports=["p_1", "p_2", "p_3", "p_4", "p_5", "p_6", "p_7", "p_8"])
+    fp.export_spc(device, file=spc_filename, components=components, sim_env=fp.sim.Env(wavelength=env.wl_range))
+
+    sim_result = sf.run_sim(spc_filename, env, is_print_netlist=True)
+
+    # env = dict(wl_start=1.26, wl_end=1.34, points_num=101, T=300)
+    # # Define the path of the netlist file
+    # spc_filename = Path(__file__).parent / "local" / Path(__file__).with_suffix(".spc").name
+    # # Export the netlist file
+    # fp.export_spc(device, file=spc_filename, components=components, sim_env=fp.sim.Env(**env))
+    # # Run simulation
+    # sim_result = sf.run_sim(
+    #     input_ports=["p_0"],  # Define the port which optical signal input
+    #     output_ports=["p_1", "p_2", "p_3", "p_4", "p_5", "p_6", "p_7", "p_8"],  # Define the ports which optical signal output
+    #     env=env,  # Define the environment
+    #     netlist_file=spc_filename,  # Define the netlist file
+    #     is_print_netlist=False  # Defines whether to print a simplified netlist information
+    # )
 
     data_1 = sim_result["p_1"]
     data_2 = sim_result["p_2"]

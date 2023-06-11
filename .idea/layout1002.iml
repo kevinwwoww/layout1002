@@ -8,13 +8,8 @@
       <excludeFolder url="file://$MODULE_DIR$/imLic_AMF" />
       <excludeFolder url="file://$MODULE_DIR$/layout01" />
       <excludeFolder url="file://$MODULE_DIR$/AMFpdk_3.5_Oband" />
-      <excludeFolder url="file://$MODULE_DIR$/CT_Al_pdk" />
-      <excludeFolder url="file://$MODULE_DIR$/CT_Cu_pdk" />
-      <excludeFolder url="file://$MODULE_DIR$/CT_pCu_pdk" />
-      <excludeFolder url="file://$MODULE_DIR$/IMECAS_pdk" />
-      <excludeFolder url="file://$MODULE_DIR$/IMECAS_SiN_pdk" />
-      <excludeFolder url="file://$MODULE_DIR$/IMECAS_SiN_pdk_1_0_0" />
-      <excludeFolder url="file://$MODULE_DIR$/AMFpdk_3_5_Cband_0420" />
+      <excludeFolder url="file://$MODULE_DIR$/../amf_pdk/AMFpdk" />
+      <excludeFolder url="file://$MODULE_DIR$/../amf_pdk_3_5_oband/AMFpdk_3_5_Oband" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

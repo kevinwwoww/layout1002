@@ -2,7 +2,7 @@ from fnpcell import all as fp
 from gpdk import all as pdk
 from gpdk.technology import get_technology
 from os import path
-from sim_s import Sim_S
+# from sim_s import Sim_S
 TECH = get_technology()
 # ========================================================================= #
 # Call component

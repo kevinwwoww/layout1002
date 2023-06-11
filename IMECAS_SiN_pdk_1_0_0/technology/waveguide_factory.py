@@ -51,12 +51,12 @@ class bb_C_BendFactory(fpt.IBendWaveguideFactory):
     def __call__(self, central_angle: float):
 
         from IMECAS_SiN_pdk_1_0_0.technology import get_technology
-        from IMECAS_SiN_pdk_1_0_0.components.bb_Bend.SIN_Bend_C import SIN_Bend_C_new
+        from IMECAS_SiN_pdk_1_0_0.components.bb_Bend.SIN_Bend_C import SIN_Bend_C
 
         TECH = get_technology()
 
         radius_eff = 100
-        bend = SIN_Bend_C_new()
+        bend = SIN_Bend_C()
 
         print(central_angle)
 

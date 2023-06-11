@@ -15,4 +15,4 @@ gds_file = path.join(path.dirname(__file__), "local", "MMI.gds")
 fp.export_gds(device, file=gds_file)
 fp.plot(device)
 # S-Parameters Export
-SimFDTD(device=MMI, file_name="MMI", time=30000, n_modes=[1,2])
+SimFDTD(device=MMI, file_name="MMI", time=1000, n_modes=[1, 2])

@@ -1,8 +1,0 @@
-NAME,CONFIGURATION
-CHANNEL.C.WIRE,"wg_layout_width=0.41, wg_design_width=0.41, port_names=('op_0', 'op_1')"
-CHANNEL.C.WIRE.BEND_CIRCULAR,radius_eff=5
-SIN.C.WIRE,"wg_layout_width=0.8, wg_design_width=0.8, port_names=('op_0', 'op_1')"
-SIN.C.WIRE.BEND_CIRCULAR,radius_eff=5
-SLAB.C.WIRE,"wg_layout_width=0.41, wg_slab_layout_width=5.0, wg_design_width=0.41, wg_slab_design_width=5.0, port_names=('op_0', 'op_1')"
-SLAB.C.WIRE.BEND_CIRCULAR,radius_eff=5
-,
