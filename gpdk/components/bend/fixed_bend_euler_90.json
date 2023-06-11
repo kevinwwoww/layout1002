@@ -1,0 +1,30 @@
+{
+    "cell_name": "BendEuler90",
+    "layers": {
+        "*": "_AUTO_"
+    },
+    "ports": [
+        {
+            "name": "op_0",
+            "position": [
+                0,
+                0
+            ],
+            "orientation": {
+                "degrees": 180
+            },
+            "waveguide_type": "TECH.WG.FWG.C.WIRE"
+        },
+        {
+            "name": "op_1",
+            "position": [
+                10,
+                10
+            ],
+            "orientation": {
+                "degrees": 90
+            },
+            "waveguide_type": "TECH.WG.FWG.C.WIRE"
+        }
+    ]
+}

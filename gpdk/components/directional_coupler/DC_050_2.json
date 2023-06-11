@@ -1,0 +1,52 @@
+{
+    "cell_name": "DC_050",
+    "layers": {
+        "*": "_AUTO_"
+    },
+    "ports": [
+        {
+            "name": "A",
+            "position": [
+                -6.225,
+                9.575
+            ],
+            "orientation": {
+                "degrees": 90
+            },
+            "waveguide_type": "TECH.WG.FWG.C.WIRE"
+        },
+        {
+            "name": "B",
+            "position": [
+                -6.225,
+                -9.575
+            ],
+            "orientation": {
+                "degrees": -90
+            },
+            "waveguide_type": "TECH.WG.FWG.C.WIRE"
+        },
+        {
+            "name": "C",
+            "position": [
+                6.225,
+                -9.575
+            ],
+            "orientation": {
+                "degrees": -90
+            },
+            "waveguide_type": "TECH.WG.FWG.C.WIRE"
+        },
+        {
+            "name": "D",
+            "position": [
+                6.225,
+                9.575
+            ],
+            "orientation": {
+                "degrees": 90
+            },
+            "waveguide_type": "TECH.WG.FWG.C.WIRE"
+        }
+    ]
+}

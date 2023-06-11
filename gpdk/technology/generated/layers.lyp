@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Generated from c:\Work\src\FnPCell\gpdk\technology\layers.csv
+-->
+<layer-properties>
+	<properties>
+		<name>FWG_COR 1.1</name>
+		<source>1/1@1</source>
+		<frame-brightness>0</frame-brightness>
+		<width>1</width>
+		<line-style>I0</line-style>
+		<frame-color>#0000FF</frame-color>
+		<fill-brightness>0</fill-brightness>
+		<fill-color>#0000FF</fill-color>
+		<dither-pattern>I8</dither-pattern>
+		<valid>true</valid>
+		<visible>true</visible>
+		<transparent>false</transparent>
+		<marked>false</marked>
+		<xfill>false</xfill>
+		<animation>0</animation>
+	</properties>
+	<properties>
+		<name>FWG_CLD 1.2</name>
+		<source>1/2@1</source>
+		<frame-brightness>0</frame-brightness>
+		<width>1</width>
+		<line-style>I0</line-style>
+		<frame-color>#0000FF</frame-color>
+		<fill-brightness>0</fill-brightness>
+		<fill-color>#0000FF</fill-color>
+		<dither-pattern>I4</dither-pattern>
+		<valid>true</valid>
+		<visible>true</visible>
+		<transparent>false</transparent>
+		<marked>false</marked>
+		<xfill>false</xfill>
+		<animation>0</animation>
+	</properties>
+</layer-properties>

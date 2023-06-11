@@ -1,0 +1,32 @@
+{
+    "cell_name": "edge_coupler_1550",
+    "layers": {
+        "*": "_ERROR_",
+        "1/0": "TECH.LAYER.FWG_COR",
+        "1/10": "TECH.LAYER.FWG_CLD",
+        "7/0": "TECH.LAYER.TIN_DRW",
+        "60/0": "TECH.LAYER.CONT_DRW",
+        "63/0": "TECH.LAYER.M1_DRW",
+        "66/0": "_IGNORE_",
+        "68/0": "80/30"
+    },
+    "ports": [
+        {
+            "name": "op_0",
+            "position": [
+                200,
+                0
+            ],
+            "orientation": {
+                "degrees": 0
+            },
+            "waveguide_type": {
+                "override": "TECH.WG.FWG.C.WIRE",
+                "values": {
+                    "core_layout_width": 0.5,
+                    "cladding_layout_width": 4.45
+                }
+            }
+        }
+    ]
+}
